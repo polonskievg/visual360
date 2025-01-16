@@ -182,4 +182,16 @@
   .rotation-slider-controls {
     top: 4.7rem;
   }
+
+  .info-block {
+    .link-icon {
+      width: 11px;
+      height: 11px;
+      margin-right: 6px;
+    }
+  }
+
+  .info-block a {
+    font-size: 10px;
+  }
 }
