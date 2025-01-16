@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Курси 3D візуалізації та моделювання Visual 360 " />
+  <link rel="stylesheet" href="./css/rotation-slider.css" />
+  <link rel="stylesheet" href="./css/progress-bar-slider.css" />
+  <link rel="stylesheet" href="./css/tabs.css" />
+  <link rel="stylesheet" href="./css/content-slider.css" />
+  <link rel="stylesheet" href="./css/pop-up.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/media.css" />
+  <title>SEO Landing Page</title>
+</head>
+
+<!-- Прелоадер -->
+<div class="preloader">
+  <div class="preloader-logo">
+    <img src="./img/logo.svg" alt="Логотип" />
+  </div>
+</div>
+
+<body>
+  <header class="header" id="header">
+    <div class="header__menu">
+      <a href="/test" class="logo"><img src="./img/logo.png" alt="Логотип студії Visual 360" loading="lazy" /></a>
+      <nav class="menu">
+        <a href="#section3" class="scroll-link">Всі курси</a>
+        <a href="#">Visual 360</a>
+        <a href="blog">Блог</a>
+        <a href="#">Для кого</a>
+        <a href="#">Роботи учнів</a>
+      </nav>
+      <button class="cta-button">Обрати курс</button>
+      <div class="hamburger" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Мобільне меню -->
+  <nav class="mobile-menu" id="mobileMenu">
+    <div class="close-btn" onclick="toggleMobileMenu()">×</div>
+    <a href="#section3" class="scroll-link">Всі курси</a>
+    <a href="#">Visual 360</a>
+    <a href="blog">Блог</a>
+    <a href="#">Для кого</a>
+    <a href="#">Роботи учнів</a>
+  </nav>
+
+  <main>
+    <section id="section1" class="section top-section">
+      <div class="content-box secondary-bgc">
+        <div class="left-block">
+          <h4>Ще трошки і...</h4>
+          <h1>Тут буде сторінка З ВіДГУКАМИ</h1>
+          <ul>
+            <li>вiд 1000$ до $3000 з нуля</li>
+            <li>100% гарантія працевлаштування</li>
+          </ul>
+          <div class="btn-group">
+            <button class="btn btn-primary">ОБРАТИ КУРС</button>
+            <button class="btn btn-secondary">
+              БЕЗКОШТОВНИЙ ОЗНАЙОМЧИЙ УРОК
+            </button>
+          </div>
+        </div>
+
+        <div class="right-block">
+          <img style="max-width: 100%;" src="./img/image1.png" alt="">
+        </div>
+      </div>
+      <div class="advantages">
+        <div class="item">
+          <div class="img bg-img"></div>
+          <div>
+            <div class="title">Рейтинг</div>
+            <p>4,8 на основі 12 367 відгуків</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img bg-img"></div>
+          <div>
+            <div class="title">Тривалість курсу</div>
+            <p>від 60 до 90 днів</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img bg-img"></div>
+          <div>
+            <div class="title">Формат</div>
+            <p>
+              онлайн, у будь-який <br />
+              зручний час
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img bg-img"></div>
+          <div>
+            <div class="title">Портфоліо</div>
+            <p>Від 10 робіт по закінченню будь-якого курсу</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Футер -->
+    <footer class="footer">
+      <div class="section shape secondary-bgc">
+        <div class="flex-container">
+          <a href="/" class="logo"><img src="./img/logo.png" alt="Логотип студії Visual 360" loading="lazy" /></a>
+          <nav class="footer__menu">
+            <a href="#">Про Visual 360</a>
+            <a href="#">Відгуки</a>
+            <a href="#">Блог</a>
+          </nav>
+          <nav class="social-media">
+            <a href="#">Instagram</a>
+            <a href="#">TikTik</a>
+            <a href="#">YouTube</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <script>
+      window.addEventListener("load", () => {
+        const preloader = document.querySelector(".preloader");
+        const content = document.querySelector(".content");
+
+        // Убираем прелоадер
+        preloader.style.opacity = "0";
+        preloader.style.transition = "opacity 1s ease";
+
+        setTimeout(() => {
+          document.body.style.overflow = "auto";
+          preloader.style.display = "none";
+          content.style.display = "block";
+        }, 1000);
+      });
+    </script>
+    <script src="./js/rotation-slider.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/progress-bar-slider.js"></script>
+    <script src="./js/tabs.js"></script>
+    <script src="./js/content-slider.js"></script>
+    <script src="./js/pop-up.js"></script>
+</body>
+
+</html>

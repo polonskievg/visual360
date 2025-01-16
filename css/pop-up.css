@@ -1,0 +1,71 @@
+/* Задній фон */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(43, 43, 43, 0.84);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1000;
+}
+
+.overlay.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Попап */
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  max-width: 766px;
+  animation: popup-show 0.3s ease;
+}
+
+@keyframes popup-show {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Відео */
+.popup iframe {
+  width: 80%;
+  height: 80%;
+  border: 0;
+  border-radius: 1rem;
+}
+
+.pop-up__close-btn {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-image: url(../img/icon-plus.png);
+  transform: rotate(45deg);
+
+  &:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s;
+  }
+}

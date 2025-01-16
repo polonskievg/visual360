@@ -1,0 +1,891 @@
+@media (max-width: 1199px) {
+  main {
+    padding: 0 20px;
+  }
+
+  .header {
+    .header__menu {
+      margin: 30px 20px 0 20px;
+    }
+  }
+
+  .scroll-x {
+    .text-top {
+      font-size: 0.7rem;
+    }
+
+    .text-bottom {
+      font-size: 1.4vw;
+    }
+
+    h3 {
+      font-size: 2vw;
+    }
+
+    p {
+      font-size: 1.8vw;
+    }
+
+    .link {
+      font-size: 1.8vw;
+    }
+  }
+
+  .section {
+    .section_title {
+      h2 {
+        font-size: 3vw;
+      }
+
+      h3 {
+        font-size: 2vw;
+      }
+    }
+  }
+
+  #passage1 {
+    .progress-bar-slider-container {
+      width: 30vw;
+    }
+
+    .progress-bar-slider-slide {
+      padding: 20px 12px;
+
+      h3 {
+        font-size: 1rem;
+      }
+
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  h3 {
+    max-width: 100%;
+  }
+
+  .hidden-mobile {
+    display: none !important;
+  }
+
+  .visible-mobile {
+    display: flex !important;
+  }
+
+  main {
+    padding: 0 16px;
+  }
+
+  .content-box {
+    flex-direction: column;
+  }
+
+  .section_title {
+    h3 {
+      margin-top: 24px;
+    }
+  }
+
+  .scroll-x {
+    overflow-x: scroll;
+    gap: 12px;
+
+    .top {
+      height: 177px;
+    }
+
+    .block {
+      flex: 0 0 97%;
+      width: auto;
+      min-width: 280px;
+      max-width: 45%;
+    }
+
+    .text-top {
+      font-size: 0.86rem;
+    }
+
+    .text-bottom {
+      font-size: 1rem;
+      letter-spacing: -0.05rem;
+      bottom: 6%;
+      left: 4%;
+      padding: 2%;
+    }
+
+    .content {
+      padding: 15px 5% 28px 5%;
+    }
+
+    h3 {
+      font-size: 20px;
+      letter-spacing: -0.05rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 23px;
+      line-height: 1.2;
+    }
+
+    .link {
+      font-size: 1rem;
+    }
+  }
+
+  .shape {
+    border-radius: 1rem;
+  }
+
+  .content-box.horizontal-scroll {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .left-block,
+  .right-block {
+    flex-basis: 100%;
+    height: auto;
+  }
+
+  .header {
+    .header__menu {
+      margin: 0 16px;
+      padding: 16px 0;
+      background-color: #fff;
+      border-radius: 0;
+    }
+
+    & .logo img {
+      height: 23.78px;
+      width: 38px;
+    }
+  }
+
+  .header .menu,
+  .cta-button {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 13px 8px;
+  }
+
+  .section,
+  .section.shape.passage .flex-container {
+    flex-direction: column;
+  }
+
+  #passage1 {
+
+    #simple-slider-2 {
+      h3 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .flex-container {
+      flex-direction: column;
+    }
+
+    .left-block,
+    .right-block {
+      flex: 0 0 100%;
+    }
+
+    .section_title {
+      h3 {
+        font-size: 14px;
+      }
+    }
+  }
+
+  #passage2 {
+    background-image: url(../img/map-mobile.jpg);
+    background-position: bottom;
+
+    .btn.visible-mobile {
+      margin-top: 25vh;
+    }
+  }
+
+  #section1 {
+    padding-top: 0;
+    margin-top: 60px;
+
+    h4 {
+      letter-spacing: normal;
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 29px;
+    }
+
+    .content-box {
+      margin-top: 0;
+      padding: 0 12px 18px 12px;
+    }
+
+    .left-block,
+    .right-block {
+      flex: 0 0 100%;
+    }
+
+    .left-block {
+      .btn-group {
+        display: none;
+      }
+    }
+
+    .right-block {
+      height: auto;
+
+      .btn-group {
+        display: block;
+        margin-top: 31px;
+      }
+    }
+
+    .advantages {
+      flex-wrap: wrap;
+
+      .item {
+        flex: 1 1 calc(50% - 10px);
+      }
+    }
+  }
+
+  #section4 {
+    h3 {
+      max-width: 100%;
+    }
+
+    &.section.shape {
+      padding: 22px 15px 30px 15px;
+    }
+
+    .title {
+      span {
+        font-size: 48.6px;
+        margin-right: 0;
+        margin-left: 0;
+      }
+
+      h2 {
+        display: block;
+        float: left;
+      }
+    }
+
+    .content-box {
+      gap: 23px;
+    }
+
+    .right-block {
+      .flex-container {
+        justify-content: center;
+      }
+
+      .flex-container:nth-child(3) {
+        justify-content: center;
+        margin-bottom: 9px;
+      }
+
+      .item {
+        width: 17vw;
+        height: 17vw;
+        max-width: fit-content;
+        max-height: fit-content;
+        border-radius: 50%;
+        overflow: hidden;
+
+        &:not(:first-child) {
+          margin-left: -10px;
+        }
+      }
+    }
+  }
+
+  #section6 {
+    padding: 2rem 1rem;
+  }
+
+  #section7 {
+    .content-box {
+      flex-direction: column-reverse;
+    }
+
+    .privilege__item {
+      align-items: start;
+      font-size: 1rem;
+
+      span {
+        line-height: 1;
+      }
+    }
+  }
+
+  .scrollable-card .img {
+    max-width: 100%;
+  }
+
+  .video-link {
+    font-size: 1rem;
+
+    img {
+      height: 40px;
+      width: 40px;
+      margin-right: 8px;
+    }
+  }
+
+  #section13 {
+    .content-box {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .hidden-mobile {
+    display: flex !important;
+  }
+
+  .visible-mobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    margin-top: 60px;
+
+    .section_title {
+      h2 {
+        text-align: left;
+        font-size: 24px;
+      }
+
+      h3 {
+        text-align: left;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .section.shape {
+    padding: 28px 14px;
+    border-radius: 20px;
+  }
+
+  .section.shape.passage {
+    flex-direction: column;
+    padding: 30px 14px;
+
+    h2 {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 1rem;
+    }
+  }
+
+  .content-box {
+    margin-top: 24px;
+  }
+
+  .scroll-x {
+    overflow-x: scroll;
+
+    .block {
+      border-radius: 12px;
+    }
+  }
+
+  #thanks-popup {
+    .popup {
+      padding: 14px;
+
+      h2 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 14px;
+        margin-top: 24px;
+        text-align: center;
+      }
+
+      .content-box {
+        margin-top: 25px;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    line-height: 1.1;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.714rem;
+    text-align: center;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    line-height: 2.05rem;
+  }
+
+  h3 {
+    font-size: 1.43rem;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  h4 {
+    font-size: 14px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+  }
+
+  ul {
+    text-align: center;
+  }
+
+  .btn {
+    height: 50px;
+  }
+
+  .scrollable-card {
+    width: 100%;
+  }
+
+  #passage1 {
+    #simple-slider-2 {
+      h3 {
+        font-size: 14px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  #section1 {
+    .btn {
+      height: 50px;
+    }
+
+    h4 {
+      font-size: 1rem;
+    }
+
+    .left-block {
+      gap: 1.2rem;
+    }
+
+    .right-block {
+      margin-top: 0;
+      height: 30rem;
+    }
+
+    .content-box {
+      gap: 16px;
+    }
+
+    ul {
+      margin-top: 0;
+      margin-left: 11px;
+
+      li {
+        letter-spacing: normal;
+        margin-bottom: 7px;
+        justify-content: center;
+
+        &::before {
+          margin-right: 8px;
+        }
+      }
+    }
+
+    .rotation-slider {
+      height: 18.34rem;
+
+      .info-block {
+        top: 42px;
+
+        .card-title {
+          font-size: 14px;
+        }
+
+        p {
+          font-size: 8px;
+        }
+      }
+
+      .info-block #card-title {
+        margin-top: 0;
+        font-size: 1rem;
+      }
+
+      .rotation-slider__slider {
+        height: 18.34rem;
+      }
+
+      .slider-controls {
+        top: 60px;
+      }
+    }
+
+    .advantages {
+      .item {
+        flex: 1 1 100%;
+        height: 80px;
+        border-radius: 16px;
+        padding: 10px;
+      }
+
+      .item:nth-child(1) .img {
+        width: 5.65rem;
+        transform: scale(1) translate(-5px, 2px);
+      }
+
+      .item:nth-child(2) .img {
+        width: 5.9rem;
+        transform: scale(1) translate(-2px, 2px);
+      }
+
+      .item:nth-child(3) .img {
+        width: 5.5rem;
+        transform: scale(1) translate(-2px, 2px);
+      }
+
+      .item:nth-child(4) .img {
+        width: 5.5rem;
+        transform: scale(1) translate(-2px, 2px);
+      }
+    }
+  }
+
+  #section2.about-us {
+    .content-box {
+      margin-top: 28px;
+      gap: 15px;
+    }
+
+    p {
+      line-height: 1.2;
+    }
+
+    .right-block {
+      .shape {
+        height: 74px;
+        border-radius: 12px;
+        padding: 11px;
+
+        .count {
+          font-size: 24px;
+        }
+      }
+
+      .about-us__logo {
+        width: 63.55px;
+        height: 38.33px;
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 1.1;
+      }
+    }
+
+    .slogan {
+      margin-top: 29px;
+      padding: 12px;
+      border-radius: 16px;
+
+      .slogan__icon {
+        width: 60px;
+        height: 60px;
+        top: -20px;
+        left: -20px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 16.8px;
+      }
+    }
+
+    .item {
+      width: 100%;
+    }
+  }
+
+  #section3.all-courses {
+    h2 {
+      width: 100%;
+      text-align: left;
+    }
+
+    .all-courses__card {
+      width: 280px;
+      padding: 25px 14px;
+
+      .video-background,
+      img {
+        width: 250px;
+        height: 160px;
+      }
+
+      h4 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.2;
+      }
+    }
+  }
+
+  #section4 {
+    .title {
+      margin-bottom: 1.2rem;
+
+      h2 {
+        text-align: left;
+        line-height: 1.2;
+        letter-spacing: -0.016rem;
+      }
+
+      span {
+        letter-spacing: -0.16rem;
+      }
+    }
+
+    h3 {
+      margin-left: -12px;
+      margin-right: -12px;
+      letter-spacing: -0.02rem;
+      line-height: 1.55rem;
+      max-width: 108%;
+    }
+
+    .right-block {
+      h3 {
+        font-size: 1rem;
+      }
+    }
+
+    .left-block {
+      height: auto;
+    }
+  }
+
+  #section5 {
+    h2 {
+      text-align: left;
+    }
+
+    .title {
+      font-weight: bold;
+      margin-top: 1.8rem;
+      letter-spacing: -0.15px;
+      line-height: 1.2;
+    }
+
+    .content-box {
+      margin-top: 32px;
+      gap: 20px;
+    }
+
+    .left-block {
+      height: auto;
+      padding: 1.3rem 1rem 2.2rem 1rem;
+
+      img {
+        transform: translateX(-8px);
+        width: 3.2rem;
+      }
+
+      h3 {
+        font-size: 1.43rem;
+        margin-top: 0;
+      }
+
+      ul {
+        font-size: 1rem;
+        text-align: left;
+        margin-left: 0;
+        margin-top: 10px;
+
+        li {
+          margin-bottom: 0;
+        }
+      }
+
+      h4 {
+        text-transform: none;
+        max-width: 75%;
+      }
+    }
+
+    .right-block {
+      gap: 20px;
+    }
+
+    .lessons {
+      flex-direction: column;
+      padding: 1.35rem 1rem 1.7rem 1rem;
+
+      p {
+        font-size: 1rem;
+        letter-spacing: -0.5px;
+        line-height: 1.2;
+      }
+    }
+
+    & .practice {
+      padding: 1.3rem 1.1rem;
+
+      p {
+        font-size: 1rem;
+        line-height: 1.15;
+        width: 90%;
+      }
+
+      img {
+        width: 70px;
+        bottom: -12px;
+        right: -3px;
+      }
+    }
+  }
+
+  #section6 {
+    height: auto;
+
+    .tab-buttons {
+      background-color: transparent;
+    }
+  }
+
+  #section7 {
+    h2 {
+      margin-inline: -5px;
+    }
+
+    .right-block {
+      width: 100%;
+    }
+
+    .btn {
+      display: none;
+    }
+  }
+
+  #section8.for-whom {
+    .content-box {
+      gap: 12px;
+    }
+
+    .for-whom__card {
+      height: 370px;
+      width: 280px;
+      border-radius: 12px;
+    }
+
+    .for-whom__card__top {
+      width: 280px;
+      height: 177px;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+
+      .course-name {
+        font-size: 12px;
+      }
+
+      .shape {
+        padding: 6px;
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .for-whom__card__bottom {
+      height: 177px;
+      width: 280px;
+      padding: 14px;
+
+      h3 {
+        font-size: 1.43rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .scrollable-card {
+    max-width: 280px;
+    border-radius: 12px;
+  }
+
+  .scrollable-card .img {
+    height: 143px;
+    margin-bottom: 12px;
+  }
+
+  .scrollable-card h3 {
+    font-size: 16px;
+  }
+
+  #section13 {
+    .title-with-rating {
+      flex-direction: column;
+      align-items: start;
+    }
+
+    .star-rating {
+      margin-top: 1rem;
+    }
+  }
+
+  .footer {
+    .flex-container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+  }
+}

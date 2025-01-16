@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Курси 3D візуалізації та моделювання Visual 360 " />
+  <link rel="stylesheet" href="./css/pop-up.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/media.css" />
+  <title>SEO Landing Page</title>
+  <style>
+    
+    .video-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
+    .video-box {
+      flex: 1 1 calc(33.333% - 20px);
+      display: flex;
+      justify-content: center;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+      .video-container {
+        gap: 8px;
+      }
+
+      .video-box {
+        flex: 1 1 100%;
+      }
+    }
+
+    .preload-progress-bar {
+      width: 80%;
+      max-width: 500px;
+      height: 30px;
+      border: 2px solid black;
+      position: relative;
+      overflow: hidden;
+      background-color: white;
+      opacity: 1;
+      transition: opacity 1s ease;
+    }
+
+    .progress {
+      width: 0%;
+      height: 100%;
+      position: relative;
+      background-color: black;
+      overflow: hidden;
+      transition: width 0.1s linear;
+    }
+
+    .pattern {
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(45deg,
+          transparent 0,
+          transparent 5px,
+          rgba(255, 255, 255, 0.3) 5px,
+          rgba(255, 255, 255, 0.3) 10px);
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation: slide 1s linear infinite;
+    }
+
+    @keyframes slide {
+      from {
+        transform: translateX(-100%);
+      }
+
+      to {
+        transform: translateX(100%);
+      }
+    }
+
+
+
+    @keyframes slide {
+      from {
+        transform: translateX(-100%);
+      }
+
+      to {
+        transform: translateX(100%);
+      }
+    }
+  </style>
+
+</head>
+
+<!-- Прелоадер -->
+<div class="preloader">
+  <div class="preloader-logo">
+    <img src="./img/logo.svg" alt="Логотип" />
+  </div>
+</div>
+
+<body>
+  <div style="max-height: 100vh; overflow-y: auto;" id="thanks-popup" class="overlay">
+    <div class="popup shape light-bgc">
+      <h2>Ви зареєструвались на <br> онлайн заняття</h2>
+      <p>Завантажуємо ваші відео! Це займе кілька секунд.</p>
+      <div class="content-box">
+        <div class="video-container">
+          <div class="video-box">
+            <video controls>
+              <source src="./video/1122.mp4" type="video/mp4">
+              Ваш браузер не поддерживает видео.
+            </video>
+          </div>
+          <div class="video-box">
+            <video controls>
+              <source src="./video/1209.mp4" type="video/mp4">
+              Ваш браузер не поддерживает видео.
+            </video>
+          </div>
+          <div class="video-box">
+            <video controls>
+              <source src="./video/1211.mp4" type="video/mp4">
+              Ваш браузер не поддерживает видео.
+            </video>
+          </div>
+        </div>
+      </div>
+      <div class="content-box content-center">
+        <div class="preload-progress-bar" id="preload-progress-bar">
+          <div class="progress">
+            <div class="pattern"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const progressBar = document.querySelector(".progress");
+      const progressBarContainer = document.getElementById("preload-progress-bar");
+      let progress = 0;
+
+      // Функция для увеличения прогресса
+      const simulateLoading = () => {
+        if (progress < 100) {
+          progress += 1; // Увеличиваем прогресс
+          progressBar.style.width = progress + "%"; // Устанавливаем ширину
+        } else {
+          clearInterval(loadingInterval); // Останавливаем анимацию, когда прогресс 100%
+          progressBarContainer.style.opacity = "0";
+        }
+      };
+
+      // Симуляция загрузки
+      const loadingInterval = setInterval(simulateLoading, 10); // Увеличение каждые 50 мс
+    });
+
+
+  </script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+.tabs {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.tab-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-btn {
+  position: relative;
+  height: 60px;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.86rem;
+  background-color: #f9f9f9;
+  color: var(--text-color);
+  font-size: 1.143rem;
+  font-weight: bold;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100%;
+  z-index: 2;
+}
+
+.tab-btn.active {
+  background-color: #efefef;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+/* Іконка стрілки */
+.icon-arrow {
+  display: inline-block;
+  width: 24px;
+  height: 12px;
+  transform: translate(3px, 1px);
+  background-image: url(../img/vector-arrow.svg);
+  transition: transform 0.3s ease;
+}
+
+.tab-btn.active .icon-arrow {
+  transform: rotate(180deg);
+}
+
+/* Контент табів */
+.tab-panel {
+  padding: 0 0;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  transform: translateY(-14px);
+  transition: opacity 0.4s ease, max-height 0.2s ease, transform 0.4s ease,
+    padding 0.5s ease;
+  background-color: rgba(203, 203, 203, 0.15);
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+.tab-panel.active {
+  opacity: 1;
+  max-height: 340px;
+  padding: 20px 14px;
+}
+
+/* Десктопна версія */
+@media (min-width: 769px) {
+  .icon-arrow {
+    display: none;
+  }
+
+  .tab-buttons {
+    background-color: #909090;
+    border-radius: 100px;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .tab-btn {
+    height: 4vw;
+    max-height: 60px;
+    width: auto;
+    font-weight: normal;
+    font-size: 1rem;
+    margin-bottom: 0;
+    color: var(--light-color);
+    justify-content: center;
+    background-color: #909090;
+    border-radius: 100px;
+    flex: 1;
+  }
+
+  .tabs {
+    flex-direction: column;
+  }
+
+  .tab-panel {
+    display: flex;
+    flex-direction: row;
+    order: 2;
+    background-color: transparent;
+    transform: translateY(40px);
+
+    .video-background {
+      object-fit: cover;
+      border-radius: 12px;
+      max-width: 100%;
+    }
+
+    .left-block {
+      .btn {
+        margin-top: auto;
+      }
+    }
+  }
+
+  .tab-panel.active {
+    padding: 0;
+  }
+}
