@@ -5,6 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Курси 3D візуалізації та моделювання Visual 360 " />
+  <meta name="keywords" content="курси 3D, моделювання, Visual 360, онлайн навчання" />
+  <meta name="author" content="Visual 360">
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/rotation-slider.css" />
   <link rel="stylesheet" href="./css/simple-slider.css" />
   <link rel="stylesheet" href="./css/tabs.css" />
@@ -15,49 +18,52 @@
   <title>SEO Landing Page</title>
 </head>
 
-<!-- Прелоадер -->
-<div class="preloader">
-  <div class="preloader-logo">
-    <img src="./img/logo.svg" alt="Логотип" />
-  </div>
-</div>
-
 <body>
-  <header class="header" id="header">
+  <!-- Прелоадер -->
+  <div class="preloader">
+    <div class="preloader-logo">
+      <img src="./img/logo.svg" alt="Логотип" />
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header" role="banner">
     <div class="header__menu">
       <a href="test" class="logo"><img src="./img/logo.png" alt="Логотип студії Visual 360" loading="lazy" /></a>
-      <nav class="menu">
-        <a href="#section3" class="scroll-link">Всі курси</a>
+      <nav class="menu" role="navigation" aria-label="Головне меню">
+        <a href="#all-courses" class="scroll-link">Всі курси</a>
         <a href="#">Visual 360</a>
-        <a href="blog">Блог</a>
+        <a href="blog.html">Блог</a>
         <a href="#">Для кого</a>
         <a href="#">Роботи учнів</a>
       </nav>
       <button class="cta-button">Обрати курс</button>
-      <div class="hamburger" onclick="toggleMobileMenu()">
+      <button class="hamburger" aria-label="Відкрити меню" onclick="toggleMobileMenu()">
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </button>
     </div>
   </header>
 
   <!-- Мобільне меню -->
-  <nav class="mobile-menu" id="mobileMenu">
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Мобільне меню">
     <div class="close-btn" onclick="toggleMobileMenu()">×</div>
-    <a href="#section3" class="scroll-link">Всі курси</a>
+    <a href="##all-courses" class="scroll-link">Всі курси</a>
     <a href="#">Visual 360</a>
     <a href="blog">Блог</a>
     <a href="#">Для кого</a>
     <a href="#">Роботи учнів</a>
   </nav>
 
+  <!-- Main Content -->
   <main>
-    <section id="section1" class="section top-section">
+    <!-- Блок 1: Герой -->
+    <section id="hero" class="section hero">
       <div class="content-box secondary-bgc">
         <div class="left-block">
-          <h4>Курси 3D візуалізації та моделювання Visual 360</h4>
-          <h1>Здобудьте нову онлайн-професію</h1>
+          <h1>Курси 3D візуалізації та моделювання Visual 360</h1>
+          <h2>Здобудьте нову онлайн-професію</h2>
           <ul>
             <li>вiд 1000$ до $3000 з нуля</li>
             <li>100% гарантія працевлаштування</li>
@@ -159,8 +165,8 @@
         </div>
       </div>
     </section>
-
-    <section id="section2" class="section about-us p-inline-0">
+    <!-- Блок 2: Курси -->
+    <section id="about-us" class="section about-us p-inline-0">
       <div class="section_title">
         <h2>Про Visual 360 </h2>
       </div>
@@ -222,8 +228,8 @@
         <div class="slogan__icon bg-img"></div>
       </div>
     </section>
-
-    <div id="section3" class="section all-courses p-inline-0">
+    <!-- Блок 3: Курси -->
+    <section id="all-courses" class="section p-inline-0">
       <div class="section_title">
         <h2>Всі курси</h2>
       </div>
@@ -278,9 +284,9 @@
           <div class="placeholder bg-img"></div>
         </div>
       </div>
-    </div>
-
-    <div id="section4" class="section shape secondary-bgc">
+    </section>
+    <!-- Блок 4: Гарантії -->
+    <section id="guarantees" class="section shape secondary-bgc">
       <div class="title">
         <h2>
           <span>98,7% </span>відсоток працевлаштування наших випускників
@@ -297,17 +303,17 @@
             <div class="simple-slider-slides">
               <div class="simple-slider-slide active">
                 <div class="simple-slider-container">
-                  <img src="./img/slide 1-1.png" alt="">
+                  <img src="./img/slide 1-1.png" alt="" loading="lazy">
                 </div>
               </div>
               <div class="simple-slider-slide">
                 <div class="simple-slider-container">
-                  <img src="./img/slide 1-1.png" alt="">
+                  <img src="./img/slide 1-1.png" alt="" loading="lazy">
                 </div>
               </div>
               <div class="simple-slider-slide">
                 <div class="simple-slider-container">
-                  <img src="./img/slide 1-1.png" alt="">
+                  <img src="./img/slide 1-1.png" alt="" loading="lazy">
                 </div>
               </div>
             </div>
@@ -322,36 +328,36 @@
           <h3>Наші випускникі</h3>
           <div class="flex-container">
             <div class="item">
-              <img src="./img/Ellipse 8.png" alt="" />
+              <img src="./img/Ellipse 8.png" alt="" loading="lazy" />
             </div>
             <div class="item">
-              <img src="./img/Ellipse 9.png" alt="" />
+              <img src="./img/Ellipse 9.png" alt="" loading="lazy" />
             </div>
             <div class="item">
-              <img src="./img/Ellipse 10.png" alt="" />
+              <img src="./img/Ellipse 10.png" alt="" loading="lazy" />
             </div>
             <div class="item">
-              <img src="./img/Ellipse 11.png" alt="" />
+              <img src="./img/Ellipse 11.png" alt="" loading="lazy" />
             </div>
             <div class="item">
-              <img src="./img/Ellipse 12.png" alt="" />
+              <img src="./img/Ellipse 12.png" alt="" loading="lazy" />
             </div>
           </div>
           <div class="flex-container">
             <div class="item">
-              <img src="./img/Ellipse 16.png" alt="" />
+              <img src="./img/Ellipse 16.png" alt="" loading="lazy" />
             </div>
             <div class="item">
-              <img src="./img/Ellipse 17.png" alt="" />
+              <img src="./img/Ellipse 17.png" alt="" loading="lazy" />
             </div>
             <div class="item">
-              <img src="./img/Ellipse 18.png" alt="" />
+              <img src="./img/Ellipse 18.png" alt="" loading="lazy" />
             </div>
             <div class="item">
-              <img src="./img/Ellipse 13.png" alt="" />
+              <img src="./img/Ellipse 13.png" alt="" loading="lazy" />
             </div>
             <div class="item">
-              <img src="./img/Ellipse 14.png" alt="" />
+              <img src="./img/Ellipse 14.png" alt="" loading="lazy" />
             </div>
           </div>
         </div>
@@ -359,9 +365,9 @@
       <button class="btn btn-primary trigger-button" data-popup="popup3">
         Приєднатися до безкоштовного заняття
       </button>
-    </div>
-
-    <div id="section5" class="why-us section p-inline-0">
+    </section>
+    <!-- Блок 5: Чому ми -->
+    <section id="why-us" class="why-us section p-inline-0">
       <div class="section_title">
         <h2>Чому такий високий показник?</h2>
         <h3>
@@ -375,7 +381,7 @@
         <div class="left-block shape dark-bgc bg-img">
           <h3>Марафон «Результат»</h3>
           <div class="flex-container align-items-center">
-            <img src="./img/star-dynamic-premium-rev.png" alt="" />
+            <img src="./img/star-dynamic-premium-rev.png" alt="" loading="lazy" />
             <h4>Гарантує працевлаштування і дає розуміння:</h4>
           </div>
           <div class="flex-container">
@@ -388,7 +394,7 @@
             </ul>
           </div>
           <div class="flex-container align-items-center">
-            <img src="./img/link-dynamic-premium.png" alt="" />
+            <img src="./img/link-dynamic-premium.png" alt="" loading="lazy" />
             <h4>
               Куратори продовжать працювати з вами до повного повернення
               вартості навчання Х2
@@ -418,16 +424,16 @@
               Студенти виконують проєкти, максимально наближені до реальних
               завдань. Це дозволяє впевнено застосовувати навички у роботі
             </p>
-            <img class="float-cloud" src="./img/thumb-up-dynamic-premium.png" alt="" />
+            <img class="float-cloud" src="./img/thumb-up-dynamic-premium.png" alt="" loading="lazy" />
           </div>
         </div>
       </div>
       <div class="flex-container content-center">
         <button class="btn btn-primary trigger-button" data-popup="popup2">ЗАЛИШИТИ ЗАЯВКУ НА НАВЧАННЯ</button>
       </div>
-    </div>
-
-    <div id="section6" class="section tab-section shape dark-bgc">
+    </section>
+    <!-- Блок 6: Як проходить навчання -->
+    <section id="tab-section" class="section tab-section shape dark-bgc">
       <div class="section_title">
         <h2>
           Як проходить навчання 3D-візуалізації та 3D моделювання в Visual360?
@@ -483,7 +489,7 @@
                   <source src="./video/1122.webm" type="video/webm" />
                   Ваш браузер не підтримує відео.
                 </video>
-                <img class="sticker-on-video" src="./img/0110.gif" alt="">
+                <img class="sticker-on-video" src="./img/0110.gif" alt="" loading="lazy" />
               </div>
             </div>
 
@@ -517,9 +523,9 @@
           ЗАЛИШИТИ ЗАЯВКУ НА НАВЧАННЯ
         </button>
       </div>
-    </div>
-
-    <div id="section7" class="section shape secondary-bgc">
+    </section>
+    <!-- Блок 7: Переваги -->
+    <section id="privilege" class="section shape secondary-bgc">
       <div class="section_title">
         <h2>
           Visual360 - найбільший в Україні ліцензований навчальний центр від
@@ -533,7 +539,7 @@
           <div class="flex-container privilege">
             <div class="privilege__item align-items-center">
               <div class="img">
-                <img src="./img/noun-certificate-2189430.png" alt="" />
+                <img src="./img/noun-certificate-2189430.png" alt="" loading="lazy" />
               </div>
               <span><b>Визнання на ринку праці:</b><br />
                 Підтверджує вашу високу кваліфікацію та володіння передовими
@@ -541,7 +547,7 @@
             </div>
             <div class="privilege__item align-items-center">
               <div class="img">
-                <img src="./img/noun-certificate-2189431.png" alt="" />
+                <img src="./img/noun-certificate-2189431.png" alt="" loading="lazy" />
               </div>
               <span><b>Верифікація навичок:</b><br />
                 Засвідчує, що ви володієте знаннями та вміннями для ефективної
@@ -549,7 +555,7 @@
             </div>
             <div class="privilege__item align-items-center">
               <div class="img">
-                <img src="./img/noun-competitive-7045332.png" alt="" />
+                <img src="./img/noun-competitive-7045332.png" alt="" loading="lazy" />
               </div>
               <span><b>Підвищення конкурентоспроможності:</b><br />
                 Виділяє вас серед інших кандидатів, що може стати вирішальним
@@ -557,7 +563,7 @@
             </div>
             <div class="privilege__item align-items-center">
               <div class="img">
-                <img src="./img/noun-trends-6360033.png" alt="" />
+                <img src="./img/noun-trends-6360033.png" alt="" loading="lazy" />
               </div>
               <span><b>Професійне зростання та розвиток:</b><br />
                 Демонструє вашу прихильність до професійного розвитку і
@@ -576,23 +582,23 @@
         <div class="right-block">
           <h3>Ліцензія № ORG10545</h3>
           <div class="light-bgc img">
-            <img src="./img/certificate.png" alt="" />
+            <img src="./img/certificate.png" alt="" loading="lazy" />
           </div>
         </div>
       </div>
       <div class="flex-container content-center">
         <button class="btn btn-primary trigger-button" data-popup="popup2">ЗАЛИШИТИ ЗАЯВКУ НА НАВЧАННЯ</button>
       </div>
-    </div>
-
-    <div id="section8" class="section">
+    </section>
+    <!-- Блок 8: Для кого -->
+    <section id="for-whom" class="section">
       <div class="section_title">
         <h2>Кому підходять наші курси 3D візуалізації та 3D моделювання</h2>
       </div>
       <div class="content-box scroll-x">
         <div class="block">
           <div class="top">
-            <img src="./img/forWhom1.png" alt="Background Image" />
+            <img src="./img/forWhom1.png" alt="Background Image" loading="lazy" />
             <div class="text-top">Курс з 3D візуалізації</div>
             <div class="text-bottom">
               від робітника на заводі до <b>1700$</b> приділяючи
@@ -609,7 +615,7 @@
         </div>
         <div class="block">
           <div class="top">
-            <img src="./img/forWhom2.png" alt="Background Image" />
+            <img src="./img/forWhom2.png" alt="Background Image" loading="lazy" />
             <div class="text-top">Курс з 3D візуалізації</div>
             <div class="text-bottom">
               Шлях від прибиральниці до <b>2600$ за 21 день</b>
@@ -628,7 +634,7 @@
         </div>
         <div class="block">
           <div class="top">
-            <img src="./img/forWhom3.png" alt="Background Image" />
+            <img src="./img/forWhom3.png" alt="Background Image" loading="lazy" />
             <div class="text-top">Курс з 3D візуалізації</div>
             <div class="text-bottom">
               з 300$ на фізичній роботі до <b>1780$ за 14 днів</b> у 3D
@@ -650,9 +656,9 @@
       <div class="flex-container content-center">
         <a href="#section3" class="btn btn-primary scroll-link">ОБРАТИ КУРС </a>
       </div>
-    </div>
-
-    <div id="section9" class="section shape passage primary-bgc bg-img">
+    </section>
+    <!-- Блок 9: Персональні рекомендації -->
+    <section id="recommendations" class="section shape passage primary-bgc bg-img">
       <div class="flex-container">
         <div class="left-block">
           <h2>
@@ -669,13 +675,13 @@
         </div>
         <div class="right-block">
           <div class="img">
-            <img src="./img/register_gif3-(1).gif" alt="" />
+            <img src="./img/register_gif3-(1).gif" alt="" loading="lazy" />
           </div>
         </div>
       </div>
-    </div>
-
-    <section class="section scrollable-section">
+    </section>
+    <!-- Блок 10: Історії успіху -->
+    <section id="success-stories" class="section scrollable-section">
       <div class="section_title">
         <h2>Вони змогли - і ви зможете</h2>
         <h3>
@@ -696,11 +702,11 @@
           </h3>
           <button class="video-link"
             onclick="openPopup('https://www.youtube.com/embed/Qb5rXCv2oWM?autoplay=1&modestbranding=1&rel=0&mute=0')">
-            <img src="./img/icon-video-button.png" alt="" /> Дивитись інтервʼю
+            <img src="./img/icon-video-button.png" alt="" loading="lazy" /> Дивитись інтервʼю
           </button>
         </div>
         <div class="scrollable-card">
-          <img class="img" src="./img/videoPrev2.jpg" alt="Image 4" />
+          <img class="img" src="./img/videoPrev2.jpg" alt="Image 4" loading="lazy" />
           <div class="flex-container content-space-between">
             <div class="name">Стас</div>
             <div class="course">Пройшла курс 3Д візуалізації</div>
@@ -711,11 +717,11 @@
           </h3>
           <button class="video-link"
             onclick="openPopup('https://www.youtube.com/embed/MYCSqTKVa0A?autoplay=1&modestbranding=1&rel=0&mute=0')">
-            <img src="./img/icon-video-button.png" alt="" /> Дивитись інтервʼю
+            <img src="./img/icon-video-button.png" alt="" loading="lazy" /> Дивитись інтервʼю
           </button>
         </div>
         <div class="scrollable-card">
-          <img class="img" src="./img/videoPrev8.jpg" alt="Image 2" />
+          <img class="img" src="./img/videoPrev8.jpg" alt="Image 2" loading="lazy" />
           <div class="flex-container content-space-between">
             <div class="name">Олеся</div>
             <div class="course">Пройшла курс 3Д візуалізації</div>
@@ -723,11 +729,11 @@
           <h3>Від фізичної праці до замовників зі США та Канади</h3>
           <button class="video-link"
             onclick="openPopup('https://www.youtube.com/embed/bnwCqxWXRYU?autoplay=1&modestbranding=1&rel=0&mute=0')">
-            <img src="./img/icon-video-button.png" alt="" /> Дивитись інтервʼю
+            <img src="./img/icon-video-button.png" alt="" loading="lazy" /> Дивитись інтервʼю
           </button>
         </div>
         <div class="scrollable-card">
-          <img class="img" src="./img/videoPrev3.jpg" alt="Image 3" />
+          <img class="img" src="./img/videoPrev3.jpg" alt="Image 3" loading="lazy" />
           <div class="flex-container content-space-between">
             <div class="name">Оксана</div>
             <div class="course">Пройшов курс 3Д візуалізації</div>
@@ -738,11 +744,11 @@
           </h3>
           <button class="video-link"
             onclick="openPopup('https://www.youtube.com/embed/BHNS--FNVcg?autoplay=1&modestbranding=1&rel=0&mute=0')">
-            <img src="./img/icon-video-button.png" alt="" /> Дивитись інтервʼю
+            <img src="./img/icon-video-button.png" alt="" loading="lazy" /> Дивитись інтервʼю
           </button>
         </div>
         <div class="scrollable-card">
-          <img class="img" src="./img/videoPrev5.jpg" alt="Image 4" />
+          <img class="img" src="./img/videoPrev5.jpg" alt="Image 4" loading="lazy" />
           <div class="flex-container content-space-between">
             <div class="name">Олег</div>
             <div class="course">Пройшла курс 3Д візуалізації</div>
@@ -752,11 +758,11 @@
           </h3>
           <button class="video-link"
             onclick="openPopup('https://www.youtube.com/embed/N3qW7GHijT8?autoplay=1&modestbranding=1&rel=0&mute=0')">
-            <img src="./img/icon-video-button.png" alt="" /> Дивитись інтервʼю
+            <img src="./img/icon-video-button.png" alt="" loading="lazy" /> Дивитись інтервʼю
           </button>
         </div>
         <div class="scrollable-card">
-          <img class="img" src="./img/videoPrev6.jpg" alt="Image 3" />
+          <img class="img" src="./img/videoPrev6.jpg" alt="Image 3" loading="lazy" />
           <div class="flex-container content-space-between">
             <div class="name">Світлана</div>
             <div class="course">Пройшов курс 3Д візуалізації</div>
@@ -767,11 +773,11 @@
           </h3>
           <button class="video-link"
             onclick="openPopup('https://www.youtube.com/embed/-8XMlNkuYXk?autoplay=1&modestbranding=1&rel=0&mute=0')">
-            <img src="./img/icon-video-button.png" alt="" /> Дивитись інтервʼю
+            <img src="./img/icon-video-button.png" alt="" loading="lazy" /> Дивитись інтервʼю
           </button>
         </div>
         <div class="scrollable-card">
-          <img class="img" src="./img/videoPrev4.jpg" alt="Image 4" />
+          <img class="img" src="./img/videoPrev4.jpg" alt="Image 4" loading="lazy" />
           <div class="flex-container content-space-between">
             <div class="name">Діана</div>
             <div class="course">Пройшла курс 3Д візуалізації</div>
@@ -782,11 +788,11 @@
           </h3>
           <button class="video-link"
             onclick="openPopup('https://www.youtube.com/embed/XO2mGqk7Pjw?autoplay=1&modestbranding=1&rel=0&mute=0')">
-            <img src="./img/icon-video-button.png" alt="" /> Дивитись інтервʼю
+            <img src="./img/icon-video-button.png" alt="" loading="lazy" /> Дивитись інтервʼю
           </button>
         </div>
         <div class="scrollable-card">
-          <img class="img" src="./img/videoPrev9.jpg" alt="Image 3" />
+          <img class="img" src="./img/videoPrev9.jpg" alt="Image 3" loading="lazy" />
           <div class="flex-container content-space-between">
             <div class="name">Ігор</div>
             <div class="course">Пройшов курс 3Д візуалізації</div>
@@ -797,11 +803,11 @@
           </h3>
           <button class="video-link"
             onclick="openPopup('https://www.youtube.com/embed/pz2tVRh45o0?autoplay=1&modestbranding=1&rel=0&mute=0')">
-            <img src="./img/icon-video-button.png" alt="" /> Дивитись інтервʼю
+            <img src="./img/icon-video-button.png" alt="" loading="lazy" /> Дивитись інтервʼю
           </button>
         </div>
         <div class="scrollable-card">
-          <img class="img" src="./img/videoPrev7.jpg" alt="Image 4" />
+          <img class="img" src="./img/videoPrev7.jpg" alt="Image 4" loading="lazy" />
           <div class="flex-container content-space-between">
             <div class="name">Андрій</div>
             <div class="course">Співзасновник Visual 360</div>
@@ -809,7 +815,7 @@
           <h3>Зустріч з учнями та їхні відгуки про навчання Visual 360</h3>
           <button class="video-link"
             onclick="openPopup('https://www.youtube.com/embed/8N1o66NLnQ0?autoplay=1&modestbranding=1&rel=0&mute=0')">
-            <img src="./img/icon-video-button.png" alt="" /> Дивитись інтервʼю
+            <img src="./img/icon-video-button.png" alt="" loading="lazy" /> Дивитись інтервʼю
           </button>
         </div>
       </div>
@@ -817,8 +823,8 @@
         <button class="btn btn-primary trigger-button" data-popup="popup2">ПРИЄДНАТИСЯ ДО КУРСУ </button>
       </div>
     </section>
-
-    <div id="passage1" class="section">
+    <!-- Блок 11: Що ви отримаєте -->
+    <section id="passage1" class="section">
       <div class="flex-container">
         <div class="left-block">
           <div class="section_title">
@@ -840,7 +846,7 @@
             <div class="simple-slider-slides">
               <div class="simple-slider-slide active">
                 <div class="simple-slider-container shape dark-bgc">
-                  <img src="./img/tick-dynamic-premium.png" alt="Image 1" />
+                  <img src="./img/tick-dynamic-premium.png" alt="Image 1" loading="lazy" />
                   <h3>Гарантоване працевлаштування</h3>
                   <p>
                     Це не просто обіцянка. Ми допомагаємо вам знайти першу
@@ -852,7 +858,7 @@
               </div>
               <div class="simple-slider-slide">
                 <div class="simple-slider-container shape dark-bgc">
-                  <img src="./img/computer-dynamic-premium.png" alt="Image 2" />
+                  <img src="./img/computer-dynamic-premium.png" alt="Image 2" loading="lazy" />
                   <h3>
                     Можливість працювати віддалено із замовниками з України,
                     ЄС, США чи ОАЕ
@@ -866,7 +872,7 @@
               </div>
               <div class="simple-slider-slide">
                 <div class="simple-slider-container shape dark-bgc">
-                  <img src="./img/picture-dynamic-premium.png" alt="Image 3" />
+                  <img src="./img/picture-dynamic-premium.png" alt="Image 3" loading="lazy" />
                   <h3>Професійне портфоліо з різноплановими проєктами</h3>
                   <p>
                     На курсах ви створите реальні роботи, які відразу
@@ -877,7 +883,7 @@
               </div>
               <div class="simple-slider-slide active">
                 <div class="simple-slider-container shape dark-bgc">
-                  <img src="./img/files-dynamic-premium.png" alt="Image 4" />
+                  <img src="./img/files-dynamic-premium.png" alt="Image 4" loading="lazy" />
                   <h3>Сертифікат Autodesk</h3>
                   <p>
                     Це серйозна перевага на ринку праці, яка підтверджує вашу
@@ -888,7 +894,7 @@
               </div>
               <div class="simple-slider-slide">
                 <div class="simple-slider-container shape dark-bgc">
-                  <img src="./img/balls-dynamic-premium.png" alt="Image 5" />
+                  <img src="./img/balls-dynamic-premium.png" alt="Image 5" loading="lazy" />
                   <h3>Підтримку і доступ до крутого ком'юніті</h3>
                   <p>
                     Ви стаєте частиною професійного ком'юніті, де ваші питання
@@ -906,9 +912,9 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <div id="passage2" class="section shape passage primary-bgc bg-img">
+    </section>
+    <!-- Блок 12: Банер -->
+    <section id="passage2" class="section shape passage primary-bgc bg-img">
       <div class="flex-container">
         <div class="left-block">
           <h2>
@@ -929,16 +935,16 @@
           </button>
         </div>
       </div>
-    </div>
-
-    <div class="section reviews" id="section13">
+    </section>
+    <!-- Блок 13: Відгуки -->
+    <section id="reviews" class="section reviews">
       <div class="flex-container title-with-rating">
         <h2 class="text-left">
           Що кажуть учні після проходження курсу 3D візуалізатор i 3D моделер?
         </h2>
         <div class="star-rating">
           <div><span>4,8</span>(12 367 оцінок)</div>
-          <img src="./img/stars.png" alt="star rating" />
+          <img src="./img/stars.png" alt="star rating" loading="lazy" />
         </div>
       </div>
       <div class="content-box">
@@ -948,7 +954,7 @@
               <div class="simple-slider-container shape secondary-bgc">
                 <div class="title">
                   <div class="photo">
-                    <img src="./img/image1.png" alt="" />
+                    <img src="./img/image1.png" alt="" loading="lazy" />
                   </div>
                   <div class="flex-container">
                     <div class="name">Yana Chustil</div>
@@ -974,7 +980,7 @@
               <div class="simple-slider-container shape secondary-bgc">
                 <div class="title">
                   <div class="photo">
-                    <img src="./img/image5.png" alt="" />
+                    <img src="./img/image5.png" alt="" loading="lazy" />
                   </div>
                   <div class="flex-container">
                     <div class="name">Natali Usyk</div>
@@ -1001,7 +1007,7 @@
               <div class="simple-slider-container shape secondary-bgc">
                 <div class="title">
                   <div class="photo">
-                    <img src="./img/image14.png" alt="" />
+                    <img src="./img/image14.png" alt="" loading="lazy" />
                   </div>
                   <div class="flex-container">
                     <div class="name">Natasha Makaro</div>
@@ -1026,11 +1032,11 @@
         </div>
       </div>
       <div class="flex-container content-center">
-        <a href="reviews" class="btn btn-primary">ДИВИТИСЯ БІЛЬШЕ ВІДГУКІВ</a>
+        <a href="reviews.html" class="btn btn-primary">ДИВИТИСЯ БІЛЬШЕ ВІДГУКІВ</a>
       </div>
-    </div>
-
-    <div class="section" id="section14">
+    </section>
+    <!-- Блок 13: Поширені запитання -->
+    <section id="faq" class="section">
       <h2>
         Поширені запитання про курси 3D-візуалізації та моделювання в студії
         Visual360
@@ -1150,7 +1156,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </main>
 
   <!-- Поп-ап з відео -->
@@ -1166,7 +1172,7 @@
     <button class="popupForm__close" data-close="popup1"><i class="icon-plus bg-img"></i></button>
     <div class="popupForm">
       <div class="popupForm__header">
-        <img src="./img/formBg1.jpg" alt="">
+        <img src="./img/formBg1.jpg" alt="" loading="lazy" />
       </div>
       <div class="popupForm__body">
         <div class="popupForm__subtitle">Дізнатися докладніше про курс</div>
@@ -1205,7 +1211,7 @@
     <button class="popupForm__close" data-close="popup2"><i class="icon-plus bg-img"></i></button>
     <div class="popupForm">
       <div class="popupForm__header">
-        <img src="./img/formBg2.jpg" alt="">
+        <img src="./img/formBg2.jpg" alt="" loading="lazy" />
       </div>
       <div class="popupForm__body">
         <div class="popupForm__subtitle">Залишити заявку на курс</div>
@@ -1244,7 +1250,7 @@
     <button class="popupForm__close" data-close="popup3"><i class="icon-plus bg-img"></i></button>
     <div class="popupForm">
       <div class="popupForm__header">
-        <img src="./img/formBg3.jpg" alt="">
+        <img src="./img/formBg3.jpg" alt="" loading="lazy" />
       </div>
       <div class="popupForm__body">
         <div class="popupForm__subtitle">Записатися на безкоштовний практичний урок</div>
@@ -1282,7 +1288,7 @@
     <button class="popupForm__close" data-close="popup4"><i class="icon-plus bg-img"></i></button>
     <div class="popupForm">
       <div class="popupForm__header">
-        <img src="./img/formBg4.jpg" alt="">
+        <img src="./img/formBg4.jpg" alt="" loading="lazy" />
       </div>
       <div class="popupForm__body">
         <div class="popupForm__subtitle">Записатися на консультацію з куратором</div>
@@ -1333,11 +1339,14 @@
       </div>
     </div>
   </footer>
+
+  <!-- Скріпти -->
   <script src="./js/rotation-slider.js"></script>
   <script src="./js/simple-slider.js"></script>
   <script src="./js/tabs.js"></script>
   <script src="./js/pop-up.js"></script>
   <script src="./js/main.js"></script>
+
 </body>
 
 </html>

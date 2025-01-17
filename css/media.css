@@ -222,7 +222,7 @@
     }
   }
 
-  #section1 {
+  #hero {
     padding-top: 0;
     margin-top: 60px;
 
@@ -267,7 +267,7 @@
     }
   }
 
-  #section4 {
+  #guarantees {
     h3 {
       max-width: 100%;
     }
@@ -318,11 +318,11 @@
     }
   }
 
-  #section6 {
+  #tab-section {
     padding: 2rem 1rem;
   }
 
-  #section7 {
+  #privilege {
     .content-box {
       flex-direction: column-reverse;
     }
@@ -351,7 +351,7 @@
     }
   }
 
-  #section13 {
+  #reviews {
     .content-box {
       width: 100%;
     }
@@ -588,7 +588,7 @@
     }
   }
 
-  #section2.about-us {
+  #about-us {
     .content-box {
       margin-top: 28px;
       gap: 15px;
@@ -643,7 +643,7 @@
     }
   }
 
-  #section3.all-courses {
+  #all-courses {
     h2 {
       width: 100%;
       text-align: left;
@@ -670,7 +670,7 @@
     }
   }
 
-  #section4 {
+  #guarantees {
     .title {
       margin-bottom: 1.2rem;
 
@@ -704,7 +704,7 @@
     }
   }
 
-  #section5 {
+  #why-us{
     h2 {
       text-align: left;
     }
@@ -784,7 +784,7 @@
     }
   }
 
-  #section6 {
+  #tab-section {
     height: auto;
 
     .tab-buttons {
@@ -792,7 +792,7 @@
     }
   }
 
-  #section7 {
+  #privilege{
     h2 {
       margin-inline: -5px;
     }
@@ -806,7 +806,7 @@
     }
   }
 
-  #section8.for-whom {
+  #for-whom {
     .content-box {
       gap: 12px;
     }
@@ -869,7 +869,7 @@
     font-size: 16px;
   }
 
-  #section13 {
+  #reviews {
     .title-with-rating {
       flex-direction: column;
       align-items: start;

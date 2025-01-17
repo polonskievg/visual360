@@ -621,7 +621,7 @@ li::before {
   background-image: url(../img/map.jpg);
 }
 
-#section1 {
+#hero {
   margin-top: 0;
 
   .content-box {
@@ -630,11 +630,17 @@ li::before {
     margin-top: 27px;
   }
 
-  h4 {
+  h1 {
     letter-spacing: -0.02rem;
     text-transform: none;
+    font-size: 1rem;
     font-weight: normal;
     margin-top: 3vw;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    text-align: left;
   }
 
   ul {
@@ -723,7 +729,7 @@ li::before {
   }
 }
 
-#section2.about-us {
+#about-us {
   align-items: start;
 
   h2 {
@@ -812,7 +818,7 @@ li::before {
   }
 }
 
-#section3.all-courses {
+#all-courses {
   flex-direction: column;
 
   h2 {
@@ -883,7 +889,7 @@ li::before {
   }
 }
 
-#section4 {
+#guarantees {
   flex-direction: column;
   align-items: center;
 
@@ -963,7 +969,7 @@ li::before {
   }
 }
 
-#section5 {
+#why-us {
   .content-box {
     gap: 15px;
   }
@@ -1040,7 +1046,7 @@ li::before {
   }
 }
 
-#section6 {
+#tab-section{
   padding: 4rem 2.1rem;
 
   .content-box {
@@ -1053,7 +1059,7 @@ li::before {
   }
 }
 
-#section7 {
+#privilege {
   .content-box {
     gap: 15px;
   }
@@ -1175,7 +1181,7 @@ li::before {
   }
 }
 
-#section9 {
+#recommendations {
   background-image: url(../img/Vector3.png);
 
   .img img {
@@ -1319,7 +1325,7 @@ li::before {
   }
 }
 
-#section13 {
+#reviews {
   .content-box {
     margin-inline: auto;
   }
