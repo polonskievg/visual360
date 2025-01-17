@@ -5,11 +5,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Курси 3D візуалізації та моделювання Visual 360 " />
-  <link rel="stylesheet" href="./css/rotation-slider.css" />
-  <link rel="stylesheet" href="./css/progress-bar-slider.css" />
-  <link rel="stylesheet" href="./css/tabs.css" />
-  <link rel="stylesheet" href="./css/content-slider.css" />
-  <link rel="stylesheet" href="./css/pop-up.css" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/media.css" />
   <title>SEO Landing Page</title>
@@ -25,9 +20,9 @@
 <body>
   <header class="header" id="header">
     <div class="header__menu">
-      <a href="/test" class="logo"><img src="./img/logo.png" alt="Логотип студії Visual 360" loading="lazy" /></a>
+      <a href="/" class="logo"><img src="./img/logo.png" alt="Логотип студії Visual 360" loading="lazy" /></a>
       <nav class="menu">
-        <a href="#section3" class="scroll-link">Всі курси</a>
+        <a href="#" class="scroll-link">Всі курси</a>
         <a href="#">Visual 360</a>
         <a href="blog">Блог</a>
         <a href="#">Для кого</a>
@@ -53,11 +48,11 @@
   </nav>
 
   <main>
-    <section id="section1" class="section top-section">
+    <section id="hero" class="section hero">
       <div class="content-box secondary-bgc">
         <div class="left-block">
-          <h4>Ще трошки і...</h4>
-          <h1>Тут буде сторінка З ВіДГУКАМИ</h1>
+          <h1>Ще трошки і...</h1>
+          <h2>Тут буде сторінка З ВіДГУКАМИ</h2>
           <ul>
             <li>вiд 1000$ до $3000 з нуля</li>
             <li>100% гарантія працевлаштування</li>
@@ -128,28 +123,7 @@
         </div>
       </div>
     </footer>
-    <script>
-      window.addEventListener("load", () => {
-        const preloader = document.querySelector(".preloader");
-        const content = document.querySelector(".content");
-
-        // Убираем прелоадер
-        preloader.style.opacity = "0";
-        preloader.style.transition = "opacity 1s ease";
-
-        setTimeout(() => {
-          document.body.style.overflow = "auto";
-          preloader.style.display = "none";
-          content.style.display = "block";
-        }, 1000);
-      });
-    </script>
-    <script src="./js/rotation-slider.js"></script>
     <script src="./js/main.js"></script>
-    <script src="./js/progress-bar-slider.js"></script>
-    <script src="./js/tabs.js"></script>
-    <script src="./js/content-slider.js"></script>
-    <script src="./js/pop-up.js"></script>
 </body>
 
 </html>

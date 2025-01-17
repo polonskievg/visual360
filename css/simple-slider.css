@@ -49,22 +49,26 @@
  }
 
  .simple-slider-arrow {
-   background-color: rgba(0, 0, 0, 0.5);
-   color: white;
+   background-color: transparent;
    border: none;
    padding: 15px;
    cursor: pointer;
    position: relative;
-   transform: translateY(-50%);
    z-index: 6;
+   &:hover {
+    background-color: var(--primary-color);
+   }
  }
 
  .simple-slider-arrow.prev {
    left: -50px;
+   background-image: url(../img/slider3Arrow.png);
+   transform: scaleX(-1);
  }
 
  .simple-slider-arrow.next {
    right: -50px;
+   background-image: url(../img/slider3Arrow.png);
  }
 
  /* Точки-індикатори */
