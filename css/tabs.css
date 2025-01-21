@@ -99,6 +99,7 @@
   .tab-btn {
     height: 4vw;
     max-height: 60px;
+    min-height: 50px;
     width: auto;
     font-weight: normal;
     font-size: 1rem;

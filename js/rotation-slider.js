@@ -90,4 +90,4 @@ function restartAutoPlay() {
 }
 
 updateCards();
-autoPlay();
+// autoPlay();

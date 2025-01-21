@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Курси 3D візуалізації та моделювання Visual 360 " />
+  <link rel="stylesheet" href="./css/simple-slider.css" />
+  <link rel="stylesheet" href="./css/pop-up.css" />
+  <link rel="stylesheet" href="./css/pop-up-forms.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/media.css" />
+  <title>SEO Landing Page</title>
+</head>
+
+<!-- Прелоадер -->
+<div class="preloader">
+  <div class="preloader-logo">
+    <img src="./img/logo.svg" alt="Логотип" />
+  </div>
+</div>
+
+<body>
+  <header class="header" id="header">
+    <div class="header__menu">
+      <a href="/" class="logo"><img src="./img/logo.png" alt="Логотип студії Visual 360" loading="lazy" /></a>
+      <nav class="menu">
+        <a href="/#all-courses" class="scroll-link">Всі курси</a>
+        <a href="#">Visual 360</a>
+        <a href="#">Блог</a>
+        <a href="#">Для кого</a>
+        <a href="#">Роботи учнів</a>
+      </nav>
+      <button class="cta-button">Обрати курс</button>
+      <div class="hamburger" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Мобільне меню -->
+  <nav class="mobile-menu" id="mobileMenu">
+    <div class="close-btn" onclick="toggleMobileMenu()">×</div>
+    <a href="/#all-courses" class="scroll-link">Всі курси</a>
+    <a href="#">Visual 360</a>
+    <a href="#">Блог</a>
+    <a href="#">Для кого</a>
+    <a href="#">Роботи учнів</a>
+  </nav>
+
+  <main data-page="visualization">
+    <!-- Блок 1: Головний -->
+    <section id="hero" class="section hero">
+      <div class="content-box secondary-bgc">
+        <h1>Курс 3D-візуалізації інтер'єрів </h1>
+        <h2>Здобудьте нову онлайн-професію за&nbsp;60&nbsp;днів, та&nbsp;заробляйте <br> до 3&nbsp;000 $ з нуля</h2>
+        <ul>
+          <li>100% працевлаштування</li>
+          <li><strong>Заробіток Х2 від вартості курсу в перші місяці після навчання</strong></li>
+        </ul>
+        <img class="hero-img float-cloud" src="./img/room-visualization.png">
+        <div class="btn-group">
+          <button class="btn btn-primary trigger-button" data-popup="popup2">ХОЧУ НА КУРС</button>
+          <button class="btn btn-secondary trigger-button" data-popup="popup3">
+            БЕЗКОШТОВНИЙ ОЗНАЙОМЧИЙ УРОК
+          </button>
+        </div>
+      </div>
+
+      <div class="advantages">
+        <div class="item">
+          <div class="img bg-img"></div>
+          <div>
+            <div class="title">Рейтинг</div>
+            <p>4,8 на основі 12 367 відгуків</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img bg-img"></div>
+          <div>
+            <div class="title">Тривалість курсу</div>
+            <p>від 60 до 90 днів</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img bg-img"></div>
+          <div>
+            <div class="title">Формат</div>
+            <p>
+              онлайн, у будь-який <br />
+              зручний час
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img bg-img"></div>
+          <div>
+            <div class="title">Портфоліо</div>
+            <p>Від 10 робіт по закінченню будь-якого курсу</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="passage1" class="section passage1">
+      <div class="flex-container">
+        <div class="left-block">
+          <div class="section_title">
+            <h2>
+              Чому 3D-візуалізація інтер'єрів - ідеальний вибір для новачків
+            </h2>
+            <h3>
+              <strong>і як точно зрозуміти, що ця професія <br> вам підійде?</strong>
+            </h3>
+          </div>
+
+          <div class="btn-group hidden-mobile">
+            <button class="btn btn-secondary trigger-button" data-popup="popup1">ДОКЛАДНІШЕ ПРО НАВЧАННЯ</button>
+            <button class="btn btn-primary trigger-button" data-popup="popup3">
+              ЗАБРОНЮВАТИ МІСЦЕ НА БЕЗКОШТОВНИЙ УРОК
+            </button>
+          </div>
+        </div>
+        <div class="right-block">
+          <div class="video-container shape secondary-bgc">
+
+          </div>
+          <div class="btn-group visible-mobile">
+            <button class="btn btn-secondary trigger-button" data-popup="popup1">ДОКЛАДНІШЕ ПРО НАВЧАННЯ</button>
+            <button class="btn btn-primary trigger-button" data-popup="popup3">
+              ЗАБРОНЮВАТИ МІСЦЕ НА БЕЗКОШТОВНИЙ УРОК
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Блок 2: Для кого -->
+    <section id="" class="section gallery-section">
+      <div class="section_title">
+        <h2>Кому потрібна 3D-візуалізація інтер'єрів</h2>
+        <h3>АБСОЛЮТНО БУДЬ-ЯКІ КОМПАНІЇ <br> у сфері нерухомості використовують 3D візуалізацію інтер'єру або екстер'єру
+        </h3>
+      </div>
+      <div class="gallery">
+        <div class="gallery-item">
+          <p>Уявіть, що за вашою візуалізацією створюватимуться:</p>
+          <img src="./img/gallery-section/item1.jpg" alt="Уявіть, що за вашою візуалізацією створюватимуться" />
+        </div>
+        <div class="gallery-item">
+          <img src="./img/gallery-section/item2.jpg" alt="Галерея 2" />
+        </div>
+        <div class="gallery-item">
+          <img src="./img/gallery-section/item3.jpg" alt="Галерея 3" />
+        </div>
+        <div class="gallery-item">
+          <img src="./img/gallery-section/item4.jpg" alt="Галерея 4" />
+        </div>
+        <div class="gallery-item">
+          <img src="./img/gallery-section/item5.jpg" alt="Галерея 5" />
+        </div>
+        <div class="gallery-item">
+          <img src="./img/gallery-section/item6.jpg" alt="Галерея 6" />
+        </div>
+        <div class="gallery-item">
+          <img src="./img/gallery-section/item7.jpg" alt="Галерея 7" />
+        </div>
+        <div class="gallery-item">
+          <img src="./img/gallery-section/item8.jpg" alt="Галерея 8" />
+        </div>
+      </div>
+      <div class="flex-container content-center">
+        <a href="#section3" class="btn btn-primary scroll-link">ПОДРОБНІШЕ </a>
+      </div>
+    </section>
+    <!-- Блок 9: Як заробляти -->
+    <section id="" class="section shape passage passage-bg-img">
+      <div class="flex-container">
+        <div class="left-block">
+          <h2>
+            ЯК ЗАРОБЛЯТИ ДО 3000$?
+          </h2>
+          <h3>
+            <strong>
+              Розповідаємо на вступному уроці із засновниками Visual 360 про перспективи сфери, дохід зі старту, пошук
+              клієнтів і
+              кар'єрне зростання
+            </strong>
+          </h3>
+          <button class="btn btn-secondary trigger-button hidden-mobile" data-popup="popup3">
+            Зареєструватися на зустріч
+          </button>
+        </div>
+        <div class="right-block">
+          <div class="img">
+            <img src="./img/register_gif2.gif" alt="" loading="lazy" />
+          </div>
+          <button class="btn btn-secondary trigger-button visible-mobile" data-popup="popup3">
+            Зареєструватися на зустріч
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Блок 10: квиток у перспективну сферу -->
+    <section id="" class="section shape passage passage-bg-img">
+      <div class="flex-container">
+        <div class="left-block">
+          <h2>
+            НАШ КУРС — ЦЕ КВИТОК У ПЕРСПЕКТИВНУ СФЕРУ 3D-ВІЗУАЛІЗАЦІЇ ІНТЕР’ЄРІВ
+          </h2>
+          <h3>
+            За 60 днів ви опануєте професію з нуля, отримаєте сертифікат Autodesk і почнете працювати з реальними
+            проєктами та
+            заробляти ще до завершення навчання
+          </h3>
+          <button class="btn btn-secondary trigger-button hidden-mobile" data-popup="popup2">
+            Розпочати навчання
+          </button>
+        </div>
+        <div class="right-block">
+          <div class="img img-absolute">
+            <img src="./img/certificate.png" alt="" loading="lazy" />
+          </div>
+          <button class="btn btn-secondary trigger-button visible-mobile" data-popup="popup2">
+            Розпочати навчання
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Блок 10: Історії успіху -->
+    <section id="success-stories" class="section scrollable-section">
+      <div class="section_title">
+        <h2>Вони змогли - і ви зможете</h2>
+        <h3>
+          Ділимося історіями наших учнів, щоб допомогти вам подолати сумніви
+          у своїх силах і можливостях, знайти натхнення і на зміни
+        </h3>
+      </div>
+      <div class="content-box horizontal-scroll">
+        <div class="scrollable-card">
+          <img class="img" src="./img/videoPrev1.jpg" alt="Image 1" />
+          <!-- <div class="flex-container content-space-between">
+            <div class="name">Дарʼя</div>
+            <div class="course">Пройшла курс 3Д візуалізації</div>
+          </div> -->
+          <h3>
+            $2600 за 21 день – шлях від фізичної роботи за кордоном до
+            успішної кар'єри в 3D-візуалізації
+          </h3>
+          <button class="video-link"
+            onclick="openPopup('https://www.youtube.com/embed/Qb5rXCv2oWM?autoplay=1&modestbranding=1&rel=0&mute=0')">
+            <img src="./img/icon-video-button.png" alt="" loading="lazy" /> Дивитись інтервʼю
+          </button>
+        </div>
+        <div class="scrollable-card">
+          <img class="img" src="./img/videoPrev2.jpg" alt="Image 4" loading="lazy" />
+          <!-- <div class="flex-container content-space-between">
+            <div class="name">Стас</div>
+            <div class="course">Пройшла курс 3Д візуалізації</div>
+          </div> -->
+          <h3>
+            Як Стас заробив $1700 за перший місяць у 3D-візуалізації та став
+            амбасадором Visual360
+          </h3>
+          <button class="video-link"
+            onclick="openPopup('https://www.youtube.com/embed/MYCSqTKVa0A?autoplay=1&modestbranding=1&rel=0&mute=0')">
+            <img src="./img/icon-video-button.png" alt="" loading="lazy" /> Дивитись інтервʼю
+          </button>
+        </div>
+        <div class="scrollable-card">
+          <img class="img" src="./img/videoPrev8.jpg" alt="Image 2" loading="lazy" />
+          <!-- <div class="flex-container content-space-between">
+            <div class="name">Олеся</div>
+            <div class="course">Пройшла курс 3Д візуалізації</div>
+          </div> -->
+          <h3>Від фізичної праці до замовників зі США та Канади</h3>
+          <button class="video-link"
+            onclick="openPopup('https://www.youtube.com/embed/bnwCqxWXRYU?autoplay=1&modestbranding=1&rel=0&mute=0')">
+            <img src="./img/icon-video-button.png" alt="" loading="lazy" /> Дивитись інтервʼю
+          </button>
+        </div>
+        <div class="scrollable-card">
+          <img class="img" src="./img/videoPrev3.jpg" alt="Image 3" loading="lazy" />
+          <!-- <div class="flex-container content-space-between">
+            <div class="name">Оксана</div>
+            <div class="course">Пройшов курс 3Д візуалізації</div>
+          </div> -->
+          <h3>
+            80 000 гривень і новенький ноутбук стали реальністю після курсу 3D
+            візуалізації інтер'єрів
+          </h3>
+          <button class="video-link"
+            onclick="openPopup('https://www.youtube.com/embed/BHNS--FNVcg?autoplay=1&modestbranding=1&rel=0&mute=0')">
+            <img src="./img/icon-video-button.png" alt="" loading="lazy" /> Дивитись інтервʼю
+          </button>
+        </div>
+        <div class="scrollable-card">
+          <img class="img" src="./img/videoPrev5.jpg" alt="Image 4" loading="lazy" />
+          <!-- <div class="flex-container content-space-between">
+            <div class="name">Олег</div>
+            <div class="course">Пройшла курс 3Д візуалізації</div>
+          </div> -->
+          <h3>
+            Кейс Олега - 44 000 грн в перший місяць одразу після навчання
+          </h3>
+          <button class="video-link"
+            onclick="openPopup('https://www.youtube.com/embed/N3qW7GHijT8?autoplay=1&modestbranding=1&rel=0&mute=0')">
+            <img src="./img/icon-video-button.png" alt="" loading="lazy" /> Дивитись інтервʼю
+          </button>
+        </div>
+        <div class="scrollable-card">
+          <img class="img" src="./img/videoPrev6.jpg" alt="Image 3" loading="lazy" />
+          <!-- <div class="flex-container content-space-between">
+            <div class="name">Світлана</div>
+            <div class="course">Пройшов курс 3Д візуалізації</div>
+          </div> -->
+          <h3>
+            Світлана, мама в декреті, яка працевлаштувалася ще під час
+            навчання
+          </h3>
+          <button class="video-link"
+            onclick="openPopup('https://www.youtube.com/embed/-8XMlNkuYXk?autoplay=1&modestbranding=1&rel=0&mute=0')">
+            <img src="./img/icon-video-button.png" alt="" loading="lazy" /> Дивитись інтервʼю
+          </button>
+        </div>
+        <div class="scrollable-card">
+          <img class="img" src="./img/videoPrev4.jpg" alt="Image 4" loading="lazy" />
+          <!-- <div class="flex-container content-space-between">
+            <div class="name">Діана</div>
+            <div class="course">Пройшла курс 3Д візуалізації</div>
+          </div> -->
+          <h3>
+            У 14 років вже заробляє у 3D візуалізації: Історія Діани та її
+            перші 2000 грн на 3D проєктах
+          </h3>
+          <button class="video-link"
+            onclick="openPopup('https://www.youtube.com/embed/XO2mGqk7Pjw?autoplay=1&modestbranding=1&rel=0&mute=0')">
+            <img src="./img/icon-video-button.png" alt="" loading="lazy" /> Дивитись інтервʼю
+          </button>
+        </div>
+        <div class="scrollable-card">
+          <img class="img" src="./img/videoPrev9.jpg" alt="Image 3" loading="lazy" />
+          <!-- <div class="flex-container content-space-between">
+            <div class="name">Ігор</div>
+            <div class="course">Пройшов курс 3Д візуалізації</div>
+          </div> -->
+          <h3>
+            3D візуалізатор з повного нуля. Відповіді на багато запитань, які
+            виникають у людей на старті
+          </h3>
+          <button class="video-link"
+            onclick="openPopup('https://www.youtube.com/embed/pz2tVRh45o0?autoplay=1&modestbranding=1&rel=0&mute=0')">
+            <img src="./img/icon-video-button.png" alt="" loading="lazy" /> Дивитись інтервʼю
+          </button>
+        </div>
+        <div class="scrollable-card">
+          <img class="img" src="./img/videoPrev7.jpg" alt="Image 4" loading="lazy" />
+          <!-- <div class="flex-container content-space-between">
+            <div class="name">Андрій</div>
+            <div class="course">Співзасновник Visual 360</div>
+          </div> -->
+          <h3>Зустріч з учнями та їхні відгуки про навчання Visual 360</h3>
+          <button class="video-link"
+            onclick="openPopup('https://www.youtube.com/embed/8N1o66NLnQ0?autoplay=1&modestbranding=1&rel=0&mute=0')">
+            <img src="./img/icon-video-button.png" alt="" loading="lazy" /> Дивитись інтервʼю
+          </button>
+        </div>
+      </div>
+      <div class="flex-container content-center">
+        <button class="btn btn-primary trigger-button" data-popup="popup2">ПРИЄДНАТИСЯ ДО КУРСУ </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Поп-ап з відео -->
+  <div id="overlay" class="overlay hidden">
+    <div class="popup">
+      <iframe id="youtubeVideo" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <button class="pop-up__close-btn bg-img" onclick="closePopup()"></button>
+    </div>
+  </div>
+
+  <!-- Поп-ап Дізнатися докладніше про курс -->
+  <div class="popupOverlay" id="popup1">
+    <button class="popupForm__close" data-close="popup1"><i class="icon-plus bg-img"></i></button>
+    <div class="popupForm">
+      <div class="popupForm__header">
+        <img src="./img/formBg1.jpg" alt="" loading="lazy" />
+      </div>
+      <div class="popupForm__body">
+        <div class="popupForm__subtitle">Дізнатися докладніше про курс</div>
+        <p class="popupForm__text">Вкажіть ваші дані для реєстрації та оберіть професію</p>
+        <form novalidate>
+          <div class="popupForm__field">
+            <input type="text" class="popupForm__input" placeholder="Імʼя" required>
+            <span class="popupForm__error"></span>
+          </div>
+          <div class="popupForm__field">
+            <input type="tel" class="popupForm__input" placeholder="Телефон" required>
+            <span class="popupForm__error"></span>
+          </div>
+          <div class="popupForm__field">
+            <input type="email" class="popupForm__input" placeholder="Email" required>
+            <span class="popupForm__error"></span>
+          </div>
+          <div class="popupForm__field">
+            <select class="popupForm__select" required>
+              <option value="" disabled selected>Оберіть професію</option>
+              <option value="3d-visualizer">Професія 3D-візуалізатор</option>
+              <option value="3d-modeler">Професія 3D-моделер</option>
+            </select>
+            <span class="popupForm__error"></span>
+          </div>
+          <button type="submit" class="popupForm__button btn btn-primary">Записатися</button>
+        </form>
+        <p class="popupForm__agreement">Натискаючи на кнопку ви погоджуєтесь на обробку персональних даних</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Поп-ап Залишити заявку на курс -->
+  <div class="popupOverlay" id="popup2">
+    <button class="popupForm__close" data-close="popup2"><i class="icon-plus bg-img"></i></button>
+    <div class="popupForm">
+      <div class="popupForm__header">
+        <img src="./img/formBg2.jpg" alt="" loading="lazy" />
+      </div>
+      <div class="popupForm__body">
+        <div class="popupForm__subtitle">Залишити заявку на курс</div>
+        <p class="popupForm__text">Вкажіть ваші дані для реєстрації та оберіть професію</p>
+        <form novalidate>
+          <div class="popupForm__field">
+            <input type="text" class="popupForm__input" placeholder="Імʼя" required>
+            <span class="popupForm__error"></span>
+          </div>
+          <div class="popupForm__field">
+            <input type="tel" class="popupForm__input" placeholder="Телефон" required>
+            <span class="popupForm__error"></span>
+          </div>
+          <div class="popupForm__field">
+            <input type="email" class="popupForm__input" placeholder="Email" required>
+            <span class="popupForm__error"></span>
+          </div>
+          <div class="popupForm__field">
+            <select class="popupForm__select" required>
+              <option value="" disabled selected>Оберіть професію</option>
+              <option value="3d-visualizer">Професія 3D-візуалізатор</option>
+              <option value="3d-modeler">Професія 3D-моделер</option>
+            </select>
+            <span class="popupForm__error"></span>
+          </div>
+          <button type="submit" class="popupForm__button btn btn-primary">Записатися</button>
+        </form>
+        <p class="popupForm__agreement">Натискаючи на кнопку ви погоджуєтесь на обробку персональних даних</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Поп-ап Записатися на безкоштовний практичний урок -->
+  <div class="popupOverlay" id="popup3">
+    <button class="popupForm__close" data-close="popup3"><i class="icon-plus bg-img"></i></button>
+    <div class="popupForm">
+      <div class="popupForm__header">
+        <img src="./img/formBg3.jpg" alt="" loading="lazy" />
+      </div>
+      <div class="popupForm__body">
+        <div class="popupForm__subtitle">Записатися на безкоштовний практичний урок</div>
+        <p class="popupForm__text">Вкажіть ваші дані для реєстрації та оберіть урок</p>
+        <form novalidate>
+          <div class="popupForm__field">
+            <input type="text" class="popupForm__input" placeholder="Імʼя" required>
+            <span class="popupForm__error"></span>
+          </div>
+          <div class="popupForm__field">
+            <input type="tel" class="popupForm__input" placeholder="Телефон" required>
+            <span class="popupForm__error"></span>
+          </div>
+          <div class="popupForm__field">
+            <input type="email" class="popupForm__input" placeholder="Email" required>
+            <span class="popupForm__error"></span>
+          </div>
+          <div class="popupForm__field">
+            <select class="popupForm__select" required>
+              <option value="" disabled selected>Оберіть урок</option>
+              <option value="3d-visualizer">Професія 3D-візуалізатор</option>
+              <option value="3d-modeler">Професія 3D-моделер</option>
+            </select>
+            <span class="popupForm__error"></span>
+          </div>
+          <button type="submit" class="popupForm__button btn btn-primary">Записатися</button>
+        </form>
+        <p class="popupForm__agreement">Натискаючи на кнопку ви погоджуєтесь на обробку персональних даних</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Поп-ап Записатися на консультацію з куратором -->
+  <div class="popupOverlay" id="popup4">
+    <button class="popupForm__close" data-close="popup4"><i class="icon-plus bg-img"></i></button>
+    <div class="popupForm">
+      <div class="popupForm__header">
+        <img src="./img/formBg4.jpg" alt="" loading="lazy" />
+      </div>
+      <div class="popupForm__body">
+        <div class="popupForm__subtitle">Записатися на консультацію з куратором</div>
+        <p class="popupForm__text">Вкажіть ваші дані для реєстрації та оберіть професію</p>
+        <form novalidate>
+          <div class="popupForm__field">
+            <input type="text" class="popupForm__input" placeholder="Імʼя" required>
+            <span class="popupForm__error"></span>
+          </div>
+          <div class="popupForm__field">
+            <input type="tel" class="popupForm__input" placeholder="Телефон" required>
+            <span class="popupForm__error"></span>
+          </div>
+          <div class="popupForm__field">
+            <input type="email" class="popupForm__input" placeholder="Email" required>
+            <span class="popupForm__error"></span>
+          </div>
+          <div class="popupForm__field">
+            <select class="popupForm__select" required>
+              <option value="" disabled selected>Оберіть професію</option>
+              <option value="3d-visualizer">Професія 3D-візуалізатор</option>
+              <option value="3d-modeler">Професія 3D-моделер</option>
+            </select>
+            <span class="popupForm__error"></span>
+          </div>
+          <button type="submit" class="popupForm__button btn btn-primary">Записатися</button>
+        </form>
+        <p class="popupForm__agreement">Натискаючи на кнопку ви погоджуєтесь на обробку персональних даних</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="section shape secondary-bgc">
+      <div class="flex-container">
+        <a href="/test" class="logo"><img src="./img/logo.png" alt="Логотип студії Visual 360" loading="lazy" /></a>
+        <nav class="footer__menu">
+          <a href="#">Про Visual 360</a>
+          <a href="#">Відгуки</a>
+          <a href="#">Блог</a>
+        </nav>
+        <nav class="social-media">
+          <a href="#">Instagram</a>
+          <a href="#">TikTik</a>
+          <a href="#">YouTube</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <script>
+
+  </script>
+  <script src="./js/simple-slider.js"></script>
+  <script src="./js/pop-up.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
