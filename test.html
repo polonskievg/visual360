@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Cards</title>
+  <style>
+    .scroll-section {
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      background-color: #ccc;
+    }
+
+    .cards-container {
+      position: relative;
+      width: 600px;
+      height: 500px;
+    }
+
+    .card {
+      position: absolute;
+      top: 10vh;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 100%;
+      height: 120px;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      transform: translateY(20%);
+      transition: transform 0.1s linear;
+    }
+
+    .card h3 {
+      margin: 0;
+    }
+
+    .card-1 {
+      background: #000;
+      color: #fff;
+      z-index: 1;
+    }
+
+    .card-2 {
+      background: #fff;
+      color: #000;
+      z-index: 2;
+      margin-top: 100px;
+    }
+
+    .card-3 {
+      background: #ffd700;
+      color: #000;
+      z-index: 3;
+      margin-top: 200px;
+    }
+
+    .card-4 {
+      background: #ccc;
+      color: #000;
+      z-index: 4;
+      margin-top: 300px;
+    }
+
+    .section {
+      height: 100vh;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="section"></section>
+  <section class="section"></section>
+  <section class="scroll-section">
+    <div class="cards-container">
+      <div class="card card-1">
+        <h3>Авторська методика навчання</h3>
+        <p>Робота візуалізатора в основному складається з практики...</p>
+      </div>
+      <div class="card card-2">
+        <h3>Стажування та практика на реальних проектах</h3>
+        <p>45% учнів починають заробляти ще під час навчання...</p>
+      </div>
+      <div class="card card-3">
+        <h3>Гарантоване працевлаштування</h3>
+        <p>Ми гарантуємо, що ви заробите X2 від вартості курсу...</p>
+      </div>
+      <div class="card card-4">
+        <h3>Співпраця зі студією</h3>
+        <p>Навіть після навчання ми продовжуємо співпрацю...</p>
+      </div>
+    </div>
+  </section>
+  <section class="section"></section>
+  <section class="section"></section>
+  <script>
+    const cards = document.querySelectorAll(".card");
+    const section = document.querySelector(".scroll-section");
+
+    document.addEventListener("scroll", () => {
+      const sectionPosition = section.getBoundingClientRect().top;
+      const viewportHeight = window.innerHeight;
+
+      if (sectionPosition < viewportHeight / 2 && sectionPosition > -viewportHeight / 2) {
+        const progress = (viewportHeight / 2 - sectionPosition) / (section.offsetHeight / 2);
+
+        cards.forEach((card, index) => {
+          const offset = Math.min(Math.max(progress - index * 0.25, 0), 1); // Расчет положения
+          card.style.transform = `translateY(${500 - offset * 500}%)`;
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>

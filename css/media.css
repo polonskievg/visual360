@@ -1,4 +1,5 @@
 @media (max-width: 1199px) {
+
   main {
     padding: 0 40px;
   }
@@ -169,6 +170,13 @@
     }
   }
 
+  .all-courses {
+    .all-courses__card {
+      width: 30vw;
+      min-width: 370px;
+    }
+  }
+
   .passage1 {
     .progress-bar-slider-container {
       width: 30vw;
@@ -211,6 +219,30 @@
         justify-content: flex-start;
       }
     }
+  }
+
+  [data-page="visualization"] {
+    & .hero {
+      .hero-img {
+        width: 38vw;
+      }
+    }
+
+    & .gallery-section {
+      & .gallery-item {
+        p {
+          font-size: 1.8vw;
+        }
+      }
+    }
+  }
+
+  .become-3d-visualizer {
+
+    h3 {
+      font-size: 2vw;
+    }
+
   }
 
 }
@@ -552,6 +584,17 @@
       width: 100%;
     }
   }
+
+  [data-page="visualization"] {
+    & .hero {
+      .hero-img {
+        position: initial;
+        margin: 0 auto;
+        width: 80vw;
+      }
+    }
+
+  }
 }
 
 @media (min-width: 768px) {
@@ -601,8 +644,14 @@
     }
   }
 
-  .content-box {
+  .content-box,
+  .grid-container {
     margin-top: 24px;
+  }
+
+  .grid-4-2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 6px;
   }
 
   .scroll-x {
@@ -829,15 +878,15 @@
     }
   }
 
-  #all-courses {
+  .all-courses {
     h2 {
       width: 100%;
       text-align: left;
     }
 
     .all-courses__card {
-      width: 280px;
       padding: 25px 14px 20px 14px;
+      min-width: 280px;
 
       .video-background,
       img {
@@ -1103,6 +1152,34 @@
       margin-top: 1rem;
     }
   }
+
+  [data-page="visualization"] {
+    & .gallery-section {
+      & .gallery-item {
+        &:hover {
+          transform: scale(1);
+        }
+
+        p {
+          font-size: 5vw;
+        }
+      }
+    }
+  }
+
+  .become-3d-visualizer {
+
+    h3 {
+      font-size: 14px;
+    }
+
+  }
+
+    .gallery-of-mentors {
+      .scrollable-card .img {
+          height: initial;
+        }
+    }
 
   .footer {
     .flex-container {
