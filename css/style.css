@@ -58,6 +58,7 @@
 
 /* Загальні стилі */
 html {
+  scroll-behavior: smooth;
   font-family: "Gilroy";
   font-size: 20px;
 
@@ -93,6 +94,7 @@ html {
 }
 
 body {
+  scroll-behavior: smooth;
   font-family: Gilroy;
   color: var(--dark-color);
 }
@@ -268,6 +270,14 @@ li::before {
   display: grid;
   margin-top: 50px;
   grid-gap: 20px;
+}
+
+.grid-2-1 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-1 {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .grid-4-2 {
@@ -1688,6 +1698,8 @@ li::before {
     }
   }
 
+
+
   .gallery-section {
     .gallery {
       display: grid;
@@ -1738,26 +1750,59 @@ li::before {
     }
   }
 
-  .bar-graph-animated-section {
-    .blocks {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-    }
+  .bar-graph-animated-section {}
+}
 
-    .block {
-      width: 100%;
-      height: 0;
-      background-color: #ccc;
-      border-radius: 10px;
-      transition: height 1s ease;
-    }
+.card-animated-section {
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 277px;
+    border-radius: 10px;
+    padding: 20px 20px 30px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    color: var(--text-color);
+    font-size: 20px;
+  }
 
-    @media (max-width: 768px) {
-      .blocks {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
+  .card h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .card-1 {
+    background: var(--dark-color);
+    color: #fff;
+    z-index: 1;
+  }
+
+  .card-2 {
+    background: var(--secondary-color);
+    z-index: 2;
+    margin-top: 64px;
+  }
+
+  .card-3 {
+    background: var(--primary-color);
+    z-index: 3;
+    margin-top: 128px;
+  }
+
+  .card-4 {
+    background: var(--gray-hover-color);
+    color: #fff;
+    z-index: 4;
+    margin-top: 192px;
+  }
+
+  .btn {
+    margin-top: 12vw;
   }
 }
 
@@ -1790,14 +1835,150 @@ li::before {
     padding: 0;
     scroll-snap-align: start;
     justify-content: initial;
+
     .img {
       max-height: initial;
     }
+
     p {
       font-size: 1rem;
       margin-bottom: 4px;
+
       strong {
         font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+.course-target-audience {
+  position: relative;
+  background-color: var(--secondary-color);
+  border-radius: 30px;
+  padding: 90px 0;
+  padding-bottom: 115px;
+
+  .grid-container .item {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .live-photo {
+      width: 100%;
+      max-width: 215px;
+      border-radius: 50%;
+    }
+
+    .live-photo-wrap {
+      display: block;
+      width: fit-content;
+      position: relative;
+    }
+
+    .live-photo-wrap::before {
+      content: "";
+      position: absolute;
+      top: 8%;
+      left: 12%;
+      display: block;
+      width: 3vw;
+      height: 3vw;
+      max-width: 16px;
+      max-height: 16px;
+      min-height: 9px;
+      min-width: 9px;
+      background-color: #01CE64;
+      border: 4px solid #efefef;
+      border-radius: 50%;
+      z-index: 5;
+    }
+
+    .live-photo-icon {
+      position: absolute;
+      right: -13%;
+      bottom: -11%;
+      width: 100%;
+      max-width: 83px;
+      height: auto;
+    }
+
+    p {
+      max-width: 80%;
+      margin-top: 26px;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 1.2;
+      letter-spacing: -0.5px;
+    }
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -10%;
+    width: 93%;
+    left: 3.5%;
+    border-radius: 16px;
+    padding: 30px;
+
+    .btn {
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 20px;
+      padding-bottom: 7px;
+      letter-spacing: -0.55px;
+    }
+  }
+}
+
+.course-learning-outcomes {
+  .scrollable-card {
+    justify-content: flex-start;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    max-width: 373px;
+  }
+
+  .scrollable-card,
+  .left-card,
+  .right-card {
+    h3 {
+      text-transform: uppercase;
+      font-size: 20px;
+      text-align: left;
+      margin: 10px 0;
+    }
+  }
+
+  .icon {
+    width: 30px;
+    height: auto;
+  }
+
+  .left-card,
+  .right-card {
+    flex-direction: column;
+  }
+
+}
+
+.profit-section {
+  .grid-container {
+    margin-bottom: 46px;
+
+    .item {
+      display: flex;
+      margin-top: auto;
+
+      img {
+        max-width: 100%;
       }
     }
   }

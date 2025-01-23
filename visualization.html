@@ -11,6 +11,7 @@
   <link rel="icon" type="image/svg+xml" href="./img/favicon/favicon.svg" />
   <link rel="shortcut icon" href="./img/favicon/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
   <link rel="manifest" href="./img/favicon/site.webmanifest" />
   <link rel="stylesheet" href="./css/simple-slider.css" />
   <link rel="stylesheet" href="./css/pop-up.css" />
@@ -184,16 +185,31 @@
         </button>
       </div>
     </section>
-    <!-- Блок 4: Переваги -->
-    <section id="" class="section shape secondary-bgc">
+    <!-- Блок 4: Скільки заробляє 3D-візуалізатор? -->
+    <section id="" class="profit-section section shape secondary-bgc">
       <div class="section_title">
         <h2>
           Скільки заробляє 3D-візуалізатор?
         </h2>
         <h3>Дохід зростатиме разом із вашим досвідом</h3>
       </div>
-      <div class="content-box">
-
+      <div class="grid-container grid-4-2">
+        <div data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-offset="100"
+          class="item">
+          <img src="./img/grid-section/1200.svg" alt="">
+        </div>
+        <div data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-offset="300"
+          class="item">
+          <img src="./img/grid-section/1500.svg" alt="">
+        </div>
+        <div data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-offset="400"
+          class="item">
+          <img src="./img/grid-section/2500.svg" alt="">
+        </div>
+        <div data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-offset="500"
+          class="item">
+          <img src="./img/grid-section/10 000.svg" alt="">
+        </div>
       </div>
       <div class="flex-container content-center">
         <p>Дізнайтеся про можливості на вступному уроці</p>
@@ -206,19 +222,23 @@
         <h2>3D-візуалізатором можна стати </h2>
       </div>
       <div class="grid-container grid-4-2">
-        <div class="item shadow">
+        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-offset="200"
+          class="item shadow">
           <h3>Без досвіду в дизайні або малюванні</h3>
           <img src="./img/grid-section/1.png" alt="">
         </div>
-        <div class="item shadow">
+        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-offset="200"
+          class="item shadow">
           <h3>Не знаючи іноземних мов</h3>
           <img src="./img/grid-section/2.png" alt="">
         </div>
-        <div class="item shadow">
+        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-offset="300"
+          class="item shadow">
           <h3>Приділяючи 2-3 години на день</h3>
           <img src="./img/grid-section/3.png" alt="">
         </div>
-        <div class="item shadow">
+        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-offset="300"
+          class="item shadow">
           <h3>Без вищої освіти</h3>
           <img src="./img/grid-section/4.png" alt="">
         </div>
@@ -230,7 +250,7 @@
       </div>
     </section>
     <!-- Блок 7: Чому курс Visaul 360 унікальний?  -->
-    <section id="" class="section passage1">
+    <section id="" class="card-animated-section passage1 section">
       <div class="flex-container">
         <div class="left-block">
           <div class="section_title">
@@ -242,33 +262,30 @@
                 12 років</strong>
             </h3>
           </div>
-
-          <div class="btn-group hidden-mobile">
             <button class="btn btn-primary trigger-button" data-popup="popup3">
               ПРИЄДНАТИСЯ ДО КУРСУ
             </button>
-          </div>
         </div>
         <div class="right-block">
           <section class="scroll-section">
             <div class="cards-container">
-              <div class="card card-1">
+              <div class="card card-1" data-aos="fade-up" data-aos-offset="100">
                 <h3>Авторська методика навчання</h3>
                 <p>Робота візуалізатора в основному складається з практики, тому навіть базові інструменти ви будете
                   розбирати на реальних
                   завданнях</p>
               </div>
-              <div class="card card-2">
+              <div class="card card-2" data-aos="fade-up" data-aos-offset="400">
                 <h3>Стажування та практика на реальних проектах</h3>
                 <p>45% учнів починають заробляти ще під час навчання, отримуючи реальні замовлення від студії та
                   вдосконалюючи свої навички
                   в 3D-візуалізації</p>
               </div>
-              <div class="card card-3">
+              <div class="card card-3" data-aos="fade-up" data-aos-offset="600">
                 <h3>Гарантоване працевлаштування</h3>
                 <p>Ми гарантуємо, що ви заробите X2 від вартості курсу в перші місяці після навчання</p>
               </div>
-              <div class="card card-4">
+              <div class="card card-4" data-aos="fade-up" data-aos-offset="800">
                 <h3>Співпраця зі студією</h3>
                 <p>Навіть після навчання ми продовжуємо співпрацю з нашими учнями, пропонуючи замовлення від нашої
                   студії з усього світу</p>
@@ -281,6 +298,96 @@
               ЗАБРОНЮВАТИ МІСЦЕ НА БЕЗКОШТОВНИЙ УРОК
             </button>
           </div>
+        </div>
+      </div>
+    </section>
+    <!-- Блок 8: Для кого підійде курс  -->
+    <section id="" class="course-target-audience section">
+      <div class="section_title">
+        <h2>
+          Для кого підійде курс <br> 3D-візуалізації інтер'єрів?
+        </h2>
+      </div>
+      <div class="grid-container grid-3-1">
+        <div class="item">
+          <div class="live-photo-wrap">
+            <img class="live-photo" src="./img/0110.gif" alt="" loading="lazy" />
+            <img class="live-photo-icon pulse" src="./img/course-target-audience/1.png" alt="">
+          </div>
+
+          <p>Для тих, хто мріє про високооплачувану кар’єру з перспективою розвитку!</p>
+
+        </div>
+        <div class="item">
+          <div class="live-photo-wrap">
+            <img class="live-photo" src="./img/0110.gif" alt="" loading="lazy" />
+            <img class="live-photo-icon pulse" src="./img/course-target-audience/2.png" alt="">
+          </div>
+          <p>Для тих, хто прагне фінансової свободи, працюючи онлайн за вільним графіком!</p>
+        </div>
+        <div class="item">
+          <div class="live-photo-wrap">
+            <img class="live-photo" src="./img/0110.gif" alt="" loading="lazy" />
+            <img class="live-photo-icon pulse" src="./img/course-target-audience/3.png" alt="">
+          </div>
+          <p>Для тих, хто хоче змінити роботу або&nbsp;знайти нову професію! </p>
+        </div>
+      </div>
+
+      <div class="banner dark-bgc">
+        <div>
+          <p>Якщо хоча б один із цих пунктів про вас, у вас вийде, дійте.
+          </p>
+          <p><strong>Почніть з безкоштовного вступного&nbsp;уроку.</strong></p>
+        </div>
+
+        <button class="btn btn-primary trigger-button" data-popup="popup3">
+          почати
+        </button>
+      </div>
+
+    </section>
+    <!-- Блок 9: Що на вас чекає на навчанні?   -->
+    <section id="" class="course-learning-outcomes section">
+      <div class="section_title">
+        <h2>Що на вас чекає на навчанні? </h2>
+      </div>
+      <div class="content-box horizontal-scroll">
+        <div class="scrollable-card">
+          <img class="icon" src="./img/icons/check-black.svg" alt="Image 1" />
+          <h3>Шлях до професії через практику</h3>
+          <p>Відточуйте навички на реальних проєктах. На курсі ви працюватимете із завданнями, які затребувані на ринку.
+            Виконали їх
+            - готові брати схожі замовлення на фрилансі та заробляти</p>
+        </div>
+        <div class="scrollable-card">
+          <img class="icon" src="./img/icons/check-black.svg" alt="Image 1" />
+          <h3>Отримуйте зворотний зв'язок від куратора</h3>
+          <p>Підтримка професійних кураторів на кожному кроці, навіть після закінчення курсу</p>
+        </div>
+        <div class="scrollable-card">
+          <img class="icon" src="./img/icons/check-black.svg" alt="Image 1" />
+          <h3>Навчання у власному темпі</h3>
+          <p>Всього 30 хвилин на день для досягнення результату. Короткі уроки по 10-15 хвилин, чітка структура,
+            практичні завдання
+            та підтримка кураторів, які доведуть до результату</p>
+        </div>
+
+      </div>
+      <div class="grid-container grid-2-1">
+        <div data-aos="fade-right" data-aos-duration="500" data-aos-offset="200" data-aos-easing="ease-in-sine"
+          class="left-card shape primary-bgc">
+          <img class="icon" src="./img/icons/check-black.svg" alt="Image 1" />
+          <h3>Отримуйте зворотний зв'язок від куратора</h3>
+          <p>Підтримка професійних кураторів на кожному кроці, навіть після закінчення курсу</p>
+        </div>
+        <div data-aos="fade-left" data-aos-duration="500" data-aos-offset="200" data-aos-easing="ease-in-sine"
+          class="right-card shape dark-bgc">
+          <img class="icon" src="./img/icons/check-white.svg" alt="Image 1" />
+          <h3>Навчання у власному темпі</h3>
+          <p>Всього 30 хвилин на день для досягнення результату. Короткі уроки по 10-15 хвилин, чітка структура,
+            практичні завдання
+            та підтримка кураторів, які доведуть до результату</p>
         </div>
       </div>
     </section>
@@ -329,7 +436,7 @@
           </button>
         </div>
         <div class="right-block">
-          <div class="img img-absolute">
+          <div class="img img-absolute" data-aos="fade-up-left" data-aos-offset="450">
             <img src="./img/certificate.png" alt="" loading="lazy" />
           </div>
           <button class="btn btn-secondary trigger-button visible-mobile" data-popup="popup2">
@@ -922,7 +1029,9 @@
   </script>
   <script src="./js/simple-slider.js"></script>
   <script src="./js/pop-up.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="./js/main.js"></script>
+  <script>AOS.init();</script>
 </body>
 
 </html>

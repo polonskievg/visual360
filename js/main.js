@@ -17,11 +17,11 @@ window.addEventListener("load", () => {
 // === Управління хедером під час скролу ===
 let lastScrollTop = 0;
 const header = document.getElementById("header");
-let isPopupOpen = false; 
-let wasHeaderHidden = false; 
+let isPopupOpen = false;
+let wasHeaderHidden = false;
 
 function handleScroll() {
-  if (isPopupOpen) return; 
+  if (isPopupOpen) return;
 
   const currentScroll = window.pageYOffset;
 
@@ -41,7 +41,6 @@ function toggleMobileMenu() {
 // === Аккордеон ===
 document.querySelectorAll(".accordion__item").forEach((item) =>
   item.addEventListener("click", function () {
-    
     document
       .querySelectorAll(".accordion__item--active")
       .forEach(
@@ -99,18 +98,18 @@ function togglePopup(popupId, action) {
   const popup = document.getElementById(popupId);
   if (popup) {
     if (action === "open") {
-      wasHeaderHidden = header.classList.contains("hidden"); 
-      popup.style.display = "flex"; 
+      wasHeaderHidden = header.classList.contains("hidden");
+      popup.style.display = "flex";
       disableScroll(); // Заблокувати прокрутку
       header.classList.add("hidden"); // Сховати хедер
-      isPopupOpen = true; 
+      isPopupOpen = true;
     } else {
       popup.style.display = "none"; // Закрити попап
       enableScroll(); // Розблокувати прокрутку
       if (!wasHeaderHidden) {
-        header.classList.remove("hidden"); 
+        header.classList.remove("hidden");
       }
-      isPopupOpen = false; 
+      isPopupOpen = false;
     }
   }
 }
@@ -145,16 +144,15 @@ function enableScroll() {
 
 // Ініціалізація слайдерів
 const slider1 = new SimpleSlider(document.getElementById("simple-slider-1"), {
-  autoPlay: true, 
-  autoPlayInterval: 4000, 
+  autoPlay: true,
+  autoPlayInterval: 4000,
 });
 const slider2 = new SimpleSlider(document.getElementById("simple-slider-2"), {
-  autoPlay: true, 
-  autoPlayInterval: 4000, 
+  autoPlay: true,
+  autoPlayInterval: 4000,
 });
 const slider3 = new SimpleSlider(document.getElementById("simple-slider-3"), {
-  autoPlay: true, 
-  autoPlayInterval: 4000, 
+  autoPlay: true,
+  autoPlayInterval: 4000,
 });
-
 
