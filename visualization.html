@@ -11,8 +11,8 @@
   <link rel="icon" type="image/svg+xml" href="./img/favicon/favicon.svg" />
   <link rel="shortcut icon" href="./img/favicon/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
   <link rel="manifest" href="./img/favicon/site.webmanifest" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/simple-slider.css" />
   <link rel="stylesheet" href="./css/pop-up.css" />
   <link rel="stylesheet" href="./css/pop-up-forms.css" />
@@ -153,7 +153,7 @@
         </h3>
       </div>
       <div class="gallery">
-        <div class="gallery-item">
+        <div class="gallery-item shadow">
           <p>Уявіть, що за вашою візуалізацією створюватимуться:</p>
           <img src="./img/gallery-section/item1.jpg" alt="Уявіть, що за вашою візуалізацією створюватимуться" />
         </div>
@@ -194,20 +194,16 @@
         <h3>Дохід зростатиме разом із вашим досвідом</h3>
       </div>
       <div class="grid-container grid-4-2">
-        <div data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-offset="100"
-          class="item">
+        <div data-aos="zoom-in-up" data-aos-duration="500" data-aos-offset="100" class="item">
           <img src="./img/grid-section/1200.svg" alt="">
         </div>
-        <div data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-offset="300"
-          class="item">
+        <div data-aos="zoom-in-up" data-aos-duration="500" data-aos-offset="200" class="item">
           <img src="./img/grid-section/1500.svg" alt="">
         </div>
-        <div data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-offset="400"
-          class="item">
+        <div data-aos="zoom-in-up" data-aos-duration="500" data-aos-offset="300" class="item">
           <img src="./img/grid-section/2500.svg" alt="">
         </div>
-        <div data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="500" data-aos-offset="500"
-          class="item">
+        <div data-aos="zoom-in-up" data-aos-duration="500" data-aos-offset="400" class="item">
           <img src="./img/grid-section/10 000.svg" alt="">
         </div>
       </div>
@@ -215,6 +211,92 @@
         <p>Дізнайтеся про можливості на вступному уроці</p>
         <button class="btn btn-primary trigger-button" data-popup="popup2">ПРИЄДНАТИСЯ</button>
       </div>
+    </section>
+    <!-- Блок 5: Можливості професії -->
+    <section id="" class="section profession-possibilities">
+      <div class="section_title">
+        <h2>Можливості професії 3D-візуалізації інтер'єрів</h2>
+      </div>
+      <div class="grid-container grid-2-1">
+        <div class="item">
+          <div class="accordion dark-theme">
+            <div class="accordion__item">
+              <button class="accordion__btn">
+                <span class="accordion__caption">Cтабільний дохід від $1500 до $3000 на місяць</span>
+                <span class="accordion__icon"><i class="icon-status bg-img"></i></span>
+              </button>
+
+              <div class="accordion__content">
+                <p>
+                  Попит на 3D-візуалізаторів росте щороку, а ви зможете працювати з клієнтами з будь-якої точки світу.  
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <button class="accordion__btn">
+                <span class="accordion__caption">Постійне кар'єрне зростання</span>
+                <span class="accordion__icon"><i class="icon-status bg-img"></i></span>
+              </button>
+
+              <div class="accordion__content">
+                <p>
+                  Опануйте навички 3D візуалізації інтер’єрів та екстер’єрів, щоб уже на старті подвоїти свій
+                  потенційний дохід. Додатково
+                  навчіться 3D моделюванню та отримуйте пасивний дохід, продаючи свої моделі на стоках.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <button class="accordion__btn">
+                <span class="accordion__caption">Вільний графік</span>
+                <span class="accordion__icon"><i class="icon-status bg-img"></i></span>
+              </button>
+
+              <div class="accordion__content">
+                <p>
+                  Ви самі визначаєте свій робочий графік, обираєте кількість замовлень і працюєте з будь-якої точки
+                  світу.
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="flex-container content-center">
+            <button class="btn btn-primary trigger-button" data-popup="popup3">
+              Пройти вступний урок
+            </button>
+          </div>
+        </div>
+        <div class="item">
+          <div class="simple-slider simple-slider-dots" id="simple-slider-1">
+            <div class="simple-slider-slides">
+              <div class="simple-slider-slide active">
+                <div class="simple-slider-container">
+                  <img src="./img/slide 1-1.png" alt="" loading="lazy">
+                </div>
+              </div>
+              <div class="simple-slider-slide">
+                <div class="simple-slider-container">
+                  <img src="./img/slide 1-1.png" alt="" loading="lazy">
+                </div>
+              </div>
+              <div class="simple-slider-slide">
+                <div class="simple-slider-container">
+                  <img src="./img/slide 1-1.png" alt="" loading="lazy">
+                </div>
+              </div>
+            </div>
+            <div class="simple-slider-controls">
+              <button class="simple-slider-arrow prev">❮</button>
+              <button class="simple-slider-arrow next">❯</button>
+            </div>
+            <div class="simple-slider-indicators"></div>
+          </div>
+        </div>
+      </div>
+
     </section>
     <!-- Блок 6: 3D-візуалізатором можна стати  -->
     <section id="" class="section become-3d-visualizer">
@@ -250,9 +332,10 @@
       </div>
     </section>
     <!-- Блок 7: Чому курс Visaul 360 унікальний?  -->
-    <section id="" class="card-animated-section passage1 section">
-      <div class="flex-container">
-        <div class="left-block">
+    <section class="card-animated-section passage1 section">
+
+      <div class="container">
+        <div class="block">
           <div class="section_title">
             <h2>
               Чому курс Visaul 360 унікальний? 
@@ -262,44 +345,45 @@
                 12 років</strong>
             </h3>
           </div>
-            <button class="btn btn-primary trigger-button" data-popup="popup3">
-              ПРИЄДНАТИСЯ ДО КУРСУ
-            </button>
+          <button class="btn btn-primary trigger-button hidden-mobile" data-popup="popup3">
+            ПРИЄДНАТИСЯ ДО КУРСУ
+          </button>
         </div>
-        <div class="right-block">
-          <section class="scroll-section">
-            <div class="cards-container">
-              <div class="card card-1" data-aos="fade-up" data-aos-offset="100">
-                <h3>Авторська методика навчання</h3>
-                <p>Робота візуалізатора в основному складається з практики, тому навіть базові інструменти ви будете
-                  розбирати на реальних
-                  завданнях</p>
-              </div>
-              <div class="card card-2" data-aos="fade-up" data-aos-offset="400">
-                <h3>Стажування та практика на реальних проектах</h3>
-                <p>45% учнів починають заробляти ще під час навчання, отримуючи реальні замовлення від студії та
-                  вдосконалюючи свої навички
-                  в 3D-візуалізації</p>
-              </div>
-              <div class="card card-3" data-aos="fade-up" data-aos-offset="600">
-                <h3>Гарантоване працевлаштування</h3>
-                <p>Ми гарантуємо, що ви заробите X2 від вартості курсу в перші місяці після навчання</p>
-              </div>
-              <div class="card card-4" data-aos="fade-up" data-aos-offset="800">
-                <h3>Співпраця зі студією</h3>
-                <p>Навіть після навчання ми продовжуємо співпрацю з нашими учнями, пропонуючи замовлення від нашої
-                  студії з усього світу</p>
-              </div>
-            </div>
-          </section>
-          <div class="btn-group visible-mobile">
-            <button class="btn btn-secondary trigger-button" data-popup="popup1">ДОКЛАДНІШЕ ПРО НАВЧАННЯ</button>
-            <button class="btn btn-primary trigger-button" data-popup="popup3">
-              ЗАБРОНЮВАТИ МІСЦЕ НА БЕЗКОШТОВНИЙ УРОК
-            </button>
+        <div class="block">
+          <div class="card card-1">
+            <h3>Авторська методика навчання</h3>
+            <p>Робота візуалізатора в основному складається з практики, тому навіть базові інструменти ви будете
+              розбирати на реальних
+              завданнях</p>
+          </div>
+        </div>
+        <div class="block">
+          <div class="card card-2">
+            <h3>Стажування та практика на реальних проектах</h3>
+            <p>45% учнів починають заробляти ще під час навчання, отримуючи реальні замовлення від студії та
+              вдосконалюючи свої навички
+              в 3D-візуалізації</p>
+          </div>
+        </div>
+        <div class="block">
+          <div class="card card-3">
+            <h3>Гарантоване працевлаштування</h3>
+            <p>Ми гарантуємо, що ви заробите X2 від вартості курсу в перші місяці після навчання</p>
+          </div>
+        </div>
+        <div class="block">
+          <div class="card card-4">
+            <h3>Співпраця зі студією</h3>
+            <p>Навіть після навчання ми продовжуємо співпрацю з нашими учнями, пропонуючи замовлення від нашої
+              студії з усього світу</p>
           </div>
         </div>
       </div>
+
+      <button class="btn btn-primary trigger-button visible-mobile" data-popup="popup3">
+        ПРИЄДНАТИСЯ ДО КУРСУ
+      </button>
+
     </section>
     <!-- Блок 8: Для кого підійде курс  -->
     <section id="" class="course-target-audience section">
@@ -375,13 +459,13 @@
 
       </div>
       <div class="grid-container grid-2-1">
-        <div data-aos="fade-right" data-aos-duration="500" data-aos-offset="200" data-aos-easing="ease-in-sine"
+        <div data-aos="fade-right" data-aos-duration="300" data-aos-offset="100" data-aos-easing="ease-in-sine"
           class="left-card shape primary-bgc">
           <img class="icon" src="./img/icons/check-black.svg" alt="Image 1" />
           <h3>Отримуйте зворотний зв'язок від куратора</h3>
           <p>Підтримка професійних кураторів на кожному кроці, навіть після закінчення курсу</p>
         </div>
-        <div data-aos="fade-left" data-aos-duration="500" data-aos-offset="200" data-aos-easing="ease-in-sine"
+        <div data-aos="fade-left" data-aos-duration="300" data-aos-offset="100" data-aos-easing="ease-in-sine"
           class="right-card shape dark-bgc">
           <img class="icon" src="./img/icons/check-white.svg" alt="Image 1" />
           <h3>Навчання у власному темпі</h3>
@@ -391,7 +475,7 @@
         </div>
       </div>
     </section>
-    <!-- Блок 9: Як заробляти -->
+    <!-- Блок 10: Як заробляти -->
     <section id="" class="section shape passage passage-bg-img">
       <div class="flex-container">
         <div class="left-block">
@@ -419,33 +503,49 @@
         </div>
       </div>
     </section>
-    <!-- Блок 10: квиток у перспективну сферу -->
-    <section id="" class="section shape passage passage-bg-img">
-      <div class="flex-container">
-        <div class="left-block">
-          <h2>
-            НАШ КУРС — ЦЕ КВИТОК У ПЕРСПЕКТИВНУ СФЕРУ 3D-ВІЗУАЛІЗАЦІЇ ІНТЕР’ЄРІВ
-          </h2>
-          <h3>
-            За 60 днів ви опануєте професію з нуля, отримаєте сертифікат Autodesk і почнете працювати з реальними
-            проєктами та
-            заробляти ще до завершення навчання
-          </h3>
-          <button class="btn btn-secondary trigger-button hidden-mobile" data-popup="popup2">
-            Розпочати навчання
-          </button>
+
+    <!-- Блок 11: Чому ви навчитесь на курсі -->
+    <section id="" class="course-learnings section ">
+      <div class="section_title">
+        <h2>Чому ви навчитесь на курсі 3Д-візуалізації інтер'єрів?</h2>
+      </div>
+      <div class="content-box">
+        <div class="left-block shape dark-bgc">
+          <img src="" alt="Фото">
+          <div class="position">Посада: 3D-візуалізатор інтер'єрів</div>
         </div>
-        <div class="right-block">
-          <div class="img img-absolute" data-aos="fade-up-left" data-aos-offset="450">
-            <img src="./img/certificate.png" alt="" loading="lazy" />
+        <div class="right-block shape dark-bgc">
+          <h3>Навички:</h3>
+          <ul>
+            <li><span>✔️</span>3D-моделювання та рендеринг</li>
+            <li><span>✔️</span>Текстурування та створення фотореалістичних зображень</li>
+            <li><span>✔️</span>Створювати реальні проєкти за вимогами замовників</li>
+            <li><span>✔️</span>Використовувати Instagram для пошуку клієнтів</li>
+            <li><span>✔️</span>Розвиток кар'єри 3D-візуалізатора, постійно підвищуючи свій дохід</li>
+          </ul>
+          <h3>Програми:</h3>
+          <div class="programs">
+            <img src="" alt="Autodesk">
+            <img src="" alt="Corona Render">
+            <img src="" alt="Photoshop">
           </div>
-          <button class="btn btn-secondary trigger-button visible-mobile" data-popup="popup2">
-            Розпочати навчання
-          </button>
         </div>
       </div>
+      <div class="cta shape dark-bgc">
+        <p>Цей курс підготує вас до роботи в індустрії, даючи всі необхідні інструменти та знання для досягнення успіху!
+        </p>
+        <div class="btn-group">
+          <button>ЗАБРОНЮВАТИ МІСЦЕ НА КУРСІ</button>
+          <button>ПЕРЕГЛЯНУТИ ПРОГРАМУ</button>
+        </div>
+      </div>
+      </div>
+      <div class="flex-container content-center">
+        <button class="btn btn-primary trigger-button" data-popup="popup2">ПРИЄДНАТИСЯ ДО КУРСУ </button>
+      </div>
     </section>
-    <!-- Блок 11: Історії успіху -->
+
+    <!-- Блок 12: Історії успіху -->
     <section id="success-stories" class="section scrollable-section">
       <div class="section_title">
         <h2>Вони змогли - і ви зможете</h2>
@@ -588,7 +688,293 @@
         <button class="btn btn-primary trigger-button" data-popup="popup2">ПРИЄДНАТИСЯ ДО КУРСУ </button>
       </div>
     </section>
-    <!-- Блок 12: Хто приведе вас до результату  -->
+    <!-- Блок 14: Програма курсу -->
+    <section id="" class="course-program section">
+      <h2>
+        Програма курсу
+      </h2>
+      <div class="content-box">
+        <div class="accordion gray-theme">
+          <div class="accordion__item">
+            <button class="accordion__btn">
+              <span class="accordion__caption">Навчання з нуля до створення професійних 3D-візуалізацій</span>
+              <span class="accordion__icon"><i class="icon-status bg-img"></i></span>
+            </button>
+
+            <div class="accordion__content">
+              <div class="info-bar">
+                <span><strong>Рівень</strong> — Базовий</span>
+                <span><strong>Кількість уроків</strong> — 163</span>
+                <span><strong>Домашніх завдань</strong> — 154</span>
+                <span><strong>Іспит</strong> — немає</span>
+              </div>
+              <div class="grid-container grid-2-1">
+                <div class="modules">
+                  <div class="module">
+                    <div class="module-title">Модуль 1: <span>Підготовка</span></div>
+                    <ul class="module-list">
+                      <li>Ознайомлення з інтерфейсом програм.</li>
+                      <li>Встановлення необхідного програмного забезпечення.</li>
+                    </ul>
+                  </div>
+                  <div class="module">
+                    <div class="module-title">Модуль 2: <span>Знайомство</span></div>
+                    <ul class="module-list">
+                      <li>Основи 3D-візуалізації.</li>
+                      <li>Робота з проектами початківця.</li>
+                    </ul>
+                  </div>
+                  <div class="module">
+                    <div class="module-title">Модуль 3: <span>Створення стін</span></div>
+                    <ul class="module-list">
+                      <li>Техніки створення базової геометрії.</li>
+                      <li>Формування стін для інтер’єрів.</li>
+                    </ul>
+                  </div>
+                  <div class="module">
+                    <div class="module-title">Модуль 4: <span>Освітлення</span></div>
+                    <ul class="module-list">
+                      <li>Типи світла в 3D-сценах.</li>
+                      <li>Робота з денним і штучним освітленням.</li>
+                    </ul>
+                  </div>
+                  <div class="module">
+                    <div class="module-title">Модуль 5: <span>Матеріали</span></div>
+                    <ul class="module-list">
+                      <li>Створення й налаштування текстур.</li>
+                      <li>Вибір відповідних матеріалів для різних елементів.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modules">
+                  <div class="module">
+                    <div class="module-title">Модуль 6: <span>Наповнення інтер’єру</span></div>
+                    <ul class="module-list">
+                      <li>Додавання меблів і декору.</li>
+                      <li>Розташування об’єктів у сцені.</li>
+                    </ul>
+                  </div>
+                  <div class="module">
+                    <div class="module-title">Модуль 7: <span>Текстурування</span></div>
+                    <ul class="module-list">
+                      <li>Створення реалістичних текстур.</li>
+                      <li>Використання UV-мапінгу.</li>
+                    </ul>
+                  </div>
+                  <div class="module">
+                    <div class="module-title">Модуль 8: <span>Підготовка до рендеру</span></div>
+                    <ul class="module-list">
+                      <li>Налаштування камери.</li>
+                      <li>Оптимізація сцени перед фінальним рендером.</li>
+                    </ul>
+                  </div>
+                  <div class="module">
+                    <div class="module-title">Модуль 9: <span>Постобробка рендерингу</span></div>
+                    <ul class="module-list">
+                      <li>Корекція кольорів і світла.</li>
+                      <li>Використання Photoshop для обробки.</li>
+                    </ul>
+                  </div>
+                  <div class="module">
+                    <div class="module-title"><span>+ Бонус</span></div>
+                    <ul class="module-list">
+                      <li>5 програм для роботи візуалізатором.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__btn">
+              <span class="accordion__caption">Навчання з нуля до гарантованого працевлаштування на ринку України</span>
+              <span class="accordion__icon"><i class="icon-status bg-img"></i></span>
+            </button>
+
+            <div class="accordion__content">
+              <div class="info-bar">
+                <span><strong>Рівень</strong> — Стандартний</span>
+                <span><strong>Кількість уроків</strong> — 176</span>
+                <span><strong>Домашніх завдань</strong> — 163</span>
+                <span><strong>Іспит</strong> — по закінченню</span>
+              </div>
+              <div class="grid-container grid-2-1">
+                <div class="modules">
+                  <div class="module">
+                    <div class="module-title"><span>Містить все з тарифу "БАЗА" + наступні бонуси:</span></div>
+                    <ul class="module-list">
+                      <li>Гарантоване працевлаштування на ринку України.</li>
+                      <li>Підтримка кураторів протягом 2 міс.</li>
+                      <li>Доступ до бази матеріалів вартістю 25 000$.</li>
+                      <li>Доступ до закритого Telegram-каналу.</li>
+                      <li>Практика на 3 реальних проєктах.</li>
+                      <li>Портфоліо з 6 робіт.</li>
+                    </ul>
+                  </div>
+                  <div class="module">
+                    <div class="module-title">Модуль 10: <span>Шаблони налаштованих інтерʼєрів</span></div>
+                    <ul class="module-list">
+                      <li>Робота з готовими сценами.</li>
+                      <li>Оптимізація шаблонів для швидкого старту.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modules">
+                  <div class="module">
+                    <div class="module-title">Модуль 11: <span>Практика на реальних завданнях від дизайнерів</span>
+                    </div>
+                    <ul class="module-list">
+                      <li>Виконання брифів.</li>
+                      <li>Робота за стандартами індустрії.</li>
+                    </ul>
+                  </div>
+                  <div class="module">
+                    <div class="module-title">Модуль 12: <span>Як вести свій Instagram для отримання клієнтів</span>
+                    </div>
+                    <ul class="module-list">
+                      <li>Оформлення профілю.</li>
+                      <li>Створення контенту, який залучає клієнтів.</li>
+                    </ul>
+                  </div>
+                  <div class="module">
+                    <div class="module-title"><span>+ Додатково:</span></div>
+                    <ul class="module-list">
+                      <li>Перевірка домашніх завдань кураторами.</li>
+                      <li>Екзамени після кожного модуля.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__btn">
+              <span class="accordion__caption">🔥Максимальний пакет із виходом на міжнародний ринок. Гарантоване
+                працевлаштування.</span>
+              <span class="accordion__icon"><i class="icon-status bg-img"></i></span>
+            </button>
+
+            <div class="accordion__content">
+              <div class="info-bar">
+                <span><strong>Рівень</strong> — Преміум</span>
+                <span><strong>Кількість уроків</strong> — 205</span>
+                <span><strong>Домашніх завдань</strong> — 188</span>
+                <span><strong>Іспит</strong> — по закінченню</span>
+              </div>
+              <div class="grid-container grid-2-1">
+                <div class="modules">
+                  <div class="module">
+                    <div class="module-title"><span>Містить все з тарифів "БАЗА" і "СТАНДАРТ" + наступні бонуси:</span>
+                    </div>
+                    <ul class="module-list">
+                      <li>Працевлаштування на західному ринку.</li>
+                      <li>Підтримка кураторів протягом 3 міс.</li>
+                      <li>Доступ до бази матеріалів вартістю 50 000$.</li>
+                      <li>Доступ до закритого Telegram-каналу + чат випускників.</li>
+                      <li>Канал вакансій.</li>
+                      <li>Портфоліо з 12 робіт.</li>
+                    </ul>
+                  </div>
+                  <div class="module">
+                    <div class="module-title">Модуль 13: <span>Світлова анімація</span></div>
+                    <ul class="module-list">
+                      <li>Створення динамічних світлових ефектів.</li>
+                      <li>Анімація освітлення для проєктів.</li>
+                    </ul>
+                  </div>
+                  <div class="module">
+                    <div class="module-title">Модуль 14: <span>Панорама 360</span>
+                    </div>
+                    <ul class="module-list">
+                      <li>Створення інтерактивних панорам.</li>
+                      <li>Налаштування VR-сцен.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modules">
+                  <div class="module">
+                    <div class="module-title">Модуль 15: <span>Пошук роботи на західному ринку</span>
+                    </div>
+                    <ul class="module-list">
+                      <li>Підготовка портфоліо для іноземних роботодавців.</li>
+                      <li>Лайфхаки для ефективного пошуку замовлень.</li>
+                    </ul>
+                  </div>
+                  <div class="module">
+                    <div class="module-title">Модуль 16: <span>Асистент 3D-візуалізатора</span>
+                    </div>
+                    <ul class="module-list">
+                      <li>Підготовка портфоліо для іноземних роботодавців.</li>
+                      <li>Лайфхаки для ефективного пошуку замовлень.</li>
+                    </ul>
+                  </div>
+
+                  <div class="module">
+                    <div class="module-title"><span>+ Бонуси:</span></div>
+                    <ul class="module-list">
+                      <li>Марафон "Результат".</li>
+                      <li>Щотижневі зідзвони.</li>
+                      <li>Інтенсив "Уроки 300 $ за 5 днів".</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- Блок 15: Квиток у перспективну сферу -->
+    <section id="" class="section shape passage passage-bg-img">
+      <div class="flex-container">
+        <div class="left-block">
+          <h2>
+            НАШ КУРС — ЦЕ КВИТОК У ПЕРСПЕКТИВНУ СФЕРУ 3D-ВІЗУАЛІЗАЦІЇ ІНТЕР’ЄРІВ
+          </h2>
+          <h3>
+            За 60 днів ви опануєте професію з нуля, отримаєте сертифікат Autodesk і почнете працювати з реальними
+            проєктами та
+            заробляти ще до завершення навчання
+          </h3>
+          <button class="btn btn-secondary trigger-button hidden-mobile" data-popup="popup2">
+            Розпочати навчання
+          </button>
+        </div>
+        <div class="right-block">
+          <div class="img img-absolute" data-aos="fade-up-left" data-aos-duration="700" data-aos-offset="400">
+            <img src="./img/certificate.png" alt="" loading="lazy" />
+          </div>
+          <button class="btn btn-secondary trigger-button visible-mobile" data-popup="popup2">
+            Розпочати навчання
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Блок 17: Підтвердження навичок  -->
+    <section id="" class="passage1 section shape secondary-bgc">
+      <div class="flex-container">
+        <div class="left-block">
+          <div class="section_title">
+            <h2>
+              Підтвердження навичок 
+            </h2>
+            <h3>
+              <strong>Ви отримаєте одразу 2 сертифікати: отримання професії 3D візуалізатора та міжнародний сертифікат
+                Autodesk</strong>
+            </h3>
+          </div>
+          <button class="btn btn-primary trigger-button" data-popup="popup3">
+            ЗАЛИШИТИ ЗАЯВКУ НА НАВЧАННЯ
+          </button>
+        </div>
+        <div class="right-block">
+
+        </div>
+      </div>
+    </section>
+    <!-- Блок 18: Хто приведе вас до результату  -->
     <section id="" class="section scrollable-section gallery-of-mentors">
       <div class="section_title">
         <h2>Хто приведе вас до результату</h2>
@@ -707,7 +1093,89 @@
         </div>
       </div>
     </section>
-    <!-- Блок 13: Поширені запитання -->
+
+    <!-- Блок 20: ФОРМАТИ УЧАСТІ -->
+    <section class="formats-section section">
+      <div class="section_title">
+        <h2 class="section-title">ФОРМАТИ УЧАСТІ</h2>
+      </div>
+      <div class="flex-container">
+        <div class="formats-tabs">
+          <div class="formats-icons">
+            <div class="icon-card">
+              <p>Навчання у вільний час</p><span class="icon">📖</span>
+            </div>
+            <div class="icon-card">
+              <p>Доступ до матеріалів на рік</p><span class="icon">📁</span>
+            </div>
+            <div class="icon-card">
+              <p>Навчання з куратором</p><span class="icon">👨‍🏫</span>
+            </div>
+            <div class="icon-card">
+              <p>Гарантія працевлаштування</p><span class="icon">✔️</span>
+            </div>
+            <div class="icon-card">
+              <p>Ліцензований учбовий центр Autodesk</p><span class="icon">🏆</span>
+            </div>
+          </div>
+          <button class="start-button">РОЗПОЧАТИ НАВЧАННЯ</button>
+        </div>
+
+        <div class="formats-cards">
+          <div class="format-card base">
+            <h3>БАЗА</h3>
+            <ul>
+              <li>Модуль 1 Підготовка</li>
+              <li>Модуль 2 Знайомство</li>
+              <li>Модуль 3 Створення стін</li>
+              <li>Модуль 4 Освітлення</li>
+              <li>Модуль 5 Матеріали</li>
+              <li>Модуль 6 Наповнення інтер’єру</li>
+              <li>Модуль 7 Текстурування</li>
+              <li>Модуль 8 Підготовка до рендеру</li>
+              <li>Модуль 9 Постобробка рендерингу</li>
+              <li>5 програм для роботи візуалізатором</li>
+            </ul>
+          </div>
+          <div class="format-card standard">
+            <h3>СТАНДАРТ</h3>
+            <p>Все, що входить до пакету "База"</p>
+            <ul>
+              <li>Гарантоване працевлаштування на ринку України</li>
+              <li>Підтримка кураторів на протязі 2 міс.</li>
+              <li>Доступ до бази матеріалів вартістю 25 000$</li>
+              <li>Доступ до закритого Telegram каналу</li>
+              <li>Практика на трьох реальних проєктах</li>
+              <li>Портфоліо із 6 робіт</li>
+              <li>Перевірка ДЗ кураторами</li>
+              <li>Екзамени після модулів</li>
+            </ul>
+          </div>
+          <div class="format-card premium">
+            <h3>ПРЕМІУМ</h3>
+            <div class="popular-tag">✨ Найпопулярніший</div>
+            <p>Все, що входить до пакетів "База" та "Стандарт"</p>
+            <ul>
+              <li>Працевлаштування на західному ринку та ринку України</li>
+              <li>Підтримка кураторів на протязі 3 міс.</li>
+              <li>Доступ до бази матеріалів вартістю 50 000$</li>
+              <li>Доступ до закритого Telegram каналу + чат випускників</li>
+              <li>Канал вакансій</li>
+              <li>Портфоліо із 12 робіт</li>
+              <li>Модуль 13 Світлова анімація</li>
+              <li>Модуль 14 Панорама 360</li>
+              <li>Модуль 15 Пошук роботи на західному ринку</li>
+              <li>Асистент 3D візуалізатора</li>
+              <li>МАРАФОН "РЕЗУЛЬТАТ"</li>
+              <li>Щотижневі дзвінки</li>
+              <li>Уроки 300 $ за 5 днів</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок 20: Поширені запитання -->
     <section id="faq" class="section">
       <h2>
         Поширені запитання про курси 3D-візуалізації та моделювання в студії
@@ -718,7 +1186,7 @@
           <div class="accordion__item">
             <button class="accordion__btn">
               <span class="accordion__caption">1. Який тариф краще обрати?</span>
-              <span class="accordion__icon"><i class="icon-plus bg-img"></i></span>
+              <span class="accordion__icon"><i class="icon-status bg-img"></i></span>
             </button>
 
             <div class="accordion__content">
@@ -744,7 +1212,7 @@
           <div class="accordion__item">
             <button class="accordion__btn">
               <span class="accordion__caption">2. На який термін надається доступ до матеріалів курсу?</span>
-              <span class="accordion__icon"><i class="icon-plus bg-img"></i></span>
+              <span class="accordion__icon"><i class="icon-status bg-img"></i></span>
             </button>
 
             <div class="accordion__content">
@@ -758,7 +1226,7 @@
           <div class="accordion__item">
             <button class="accordion__btn">
               <span class="accordion__caption">3. Чи є розстрочка? Як її отримати та на яку кількість платежів?</span>
-              <span class="accordion__icon"><i class="icon-plus bg-img"></i></span>
+              <span class="accordion__icon"><i class="icon-status bg-img"></i></span>
             </button>
 
             <div class="accordion__content">
@@ -776,7 +1244,7 @@
           <div class="accordion__item">
             <button class="accordion__btn">
               <span class="accordion__caption">4. А якщо я зовсім новачок, чи потягну?</span>
-              <span class="accordion__icon"><i class="icon-plus bg-img"></i></span>
+              <span class="accordion__icon"><i class="icon-status bg-img"></i></span>
             </button>
 
             <div class="accordion__content">
@@ -793,7 +1261,7 @@
           <!-- <div class="accordion__item">
             <button class="accordion__btn">
               <span class="accordion__caption">5. Чи можу я працювати в 3Ds Max на Mac?</span>
-              <span class="accordion__icon"><i class="icon-plus bg-img"></i></span>
+              <span class="accordion__icon"><i class="icon-status bg-img"></i></span>
             </button>
 
             <div class="accordion__content">
@@ -809,7 +1277,7 @@
             <button class="accordion__btn">
               <span class="accordion__caption">6. Які є варіанти оплати за курси 3D-візуалізації та
                 моделювання?</span>
-              <span class="accordion__icon"><i class="icon-plus bg-img"></i></span>
+              <span class="accordion__icon"><i class="icon-status bg-img"></i></span>
             </button>
 
             <div class="accordion__content">
@@ -826,7 +1294,7 @@
           <div class="accordion__item">
             <button class="accordion__btn">
               <span class="accordion__caption">7. А якщо я зовсім новачок, чи потягну?</span>
-              <span class="accordion__icon"><i class="icon-plus bg-img"></i></span>
+              <span class="accordion__icon"><i class="icon-status bg-img"></i></span>
             </button>
 
             <div class="accordion__content">
@@ -854,7 +1322,7 @@
 
   <!-- Поп-ап Дізнатися докладніше про курс -->
   <div class="popupOverlay" id="popup1">
-    <button class="popupForm__close" data-close="popup1"><i class="icon-plus bg-img"></i></button>
+    <button class="popupForm__close" data-close="popup1"><i class="icon-status bg-img"></i></button>
     <div class="popupForm">
       <div class="popupForm__header">
         <img src="./img/formBg1.jpg" alt="" loading="lazy" />
@@ -893,7 +1361,7 @@
 
   <!-- Поп-ап Залишити заявку на курс -->
   <div class="popupOverlay" id="popup2">
-    <button class="popupForm__close" data-close="popup2"><i class="icon-plus bg-img"></i></button>
+    <button class="popupForm__close" data-close="popup2"><i class="icon-status bg-img"></i></button>
     <div class="popupForm">
       <div class="popupForm__header">
         <img src="./img/formBg2.jpg" alt="" loading="lazy" />
@@ -932,7 +1400,7 @@
 
   <!-- Поп-ап Записатися на безкоштовний практичний урок -->
   <div class="popupOverlay" id="popup3">
-    <button class="popupForm__close" data-close="popup3"><i class="icon-plus bg-img"></i></button>
+    <button class="popupForm__close" data-close="popup3"><i class="icon-status bg-img"></i></button>
     <div class="popupForm">
       <div class="popupForm__header">
         <img src="./img/formBg3.jpg" alt="" loading="lazy" />
@@ -970,7 +1438,7 @@
 
   <!-- Поп-ап Записатися на консультацію з куратором -->
   <div class="popupOverlay" id="popup4">
-    <button class="popupForm__close" data-close="popup4"><i class="icon-plus bg-img"></i></button>
+    <button class="popupForm__close" data-close="popup4"><i class="icon-status bg-img"></i></button>
     <div class="popupForm">
       <div class="popupForm__header">
         <img src="./img/formBg4.jpg" alt="" loading="lazy" />
@@ -1027,11 +1495,13 @@
   <script>
 
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="./js/simple-slider.js"></script>
   <script src="./js/pop-up.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="./js/main.js"></script>
-  <script>AOS.init();</script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

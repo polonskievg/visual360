@@ -1,7 +1,6 @@
 // === Прелоадер ===
 window.addEventListener("load", () => {
   const preloader = document.querySelector(".preloader");
-  const content = document.querySelector(".content");
 
   // Ховаємо прелоадер
   preloader.style.opacity = "0";
@@ -10,7 +9,6 @@ window.addEventListener("load", () => {
   setTimeout(() => {
     document.body.style.overflow = "auto";
     preloader.style.display = "none";
-    content.style.display = "block";
   }, 1000);
 });
 
@@ -155,4 +153,3 @@ const slider3 = new SimpleSlider(document.getElementById("simple-slider-3"), {
   autoPlay: true,
   autoPlayInterval: 4000,
 });
-

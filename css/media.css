@@ -1287,6 +1287,18 @@
     }
   }
 
+  .card-animated-section {
+    .card {
+      margin-top: -30%;
+      height: 193px;
+    }
+
+    .card-1 {
+      margin-top: 0;
+    }
+
+  }
+
   .footer {
     .flex-container {
       flex-direction: column;

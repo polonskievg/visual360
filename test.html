@@ -4,118 +4,217 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scroll Cards</title>
+  <title>Формати участі</title>
   <style>
-    .scroll-section {
-      height: 500px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      background-color: #ccc;
-    }
-
-    .cards-container {
-      position: relative;
-      width: 600px;
-      height: 500px;
-    }
-
-    .card {
-      position: absolute;
-      top: 10vh;
-      left: 0;
-      right: 0;
-      margin: auto;
-      width: 100%;
-      height: 120px;
-      border-radius: 10px;
-      padding: 15px;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-      transform: translateY(20%);
-      transition: transform 0.1s linear;
-    }
-
-    .card h3 {
+    body {
+      font-family: Arial, sans-serif;
       margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
     }
 
-    .card-1 {
-      background: #000;
-      color: #fff;
-      z-index: 1;
+    .formats-section {
+      text-align: center;
+      padding: 20px;
     }
 
-    .card-2 {
-      background: #fff;
-      color: #000;
-      z-index: 2;
-      margin-top: 100px;
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
     }
 
-    .card-3 {
-      background: #ffd700;
-      color: #000;
-      z-index: 3;
-      margin-top: 200px;
+    .formats-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
     }
 
-    .card-4 {
-      background: #ccc;
-      color: #000;
-      z-index: 4;
-      margin-top: 300px;
+    .format-card {
+      flex: 1;
+      max-width: 300px;
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
-    .section {
-      height: 100vh;
+    .format-card h3 {
+      background-color: #ffaa00;
+      color: black;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .format-card ul {
+      list-style-type: none;
+      padding-left: 10px;
+      font-size: 0.9rem;
+    }
+
+    .format-card ul li {
+      margin-bottom: 8px;
+    }
+
+    .format-card.standard h3 {
+      background-color: #aaa;
+    }
+
+    .format-card.premium h3 {
+      background-color: #ffd700;
+    }
+
+    .popular-tag {
+      background-color: #ff6347;
+      color: white;
+      font-size: 0.8rem;
+      padding: 5px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .start-button {
+      background-color: #ffaa00;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .start-button:hover {
+      background-color: #ffc107;
+    }
+
+    .formats-icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .icon-card {
+      background-color: #444;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex: 1 1 250px;
+    }
+
+    .icon-card p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    .icon {
+      font-size: 1.5rem;
+    }
+
+    @media (max-width: 480px) {
+      .formats-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .formats-icons {
+        flex-direction: column;
+      }
+
+      .icon-card {
+        width: 100%;
+      }
+
+      .format-card {
+        width: 90%;
+      }
     }
   </style>
 </head>
 
 <body>
-  <section class="section"></section>
-  <section class="section"></section>
-  <section class="scroll-section">
-    <div class="cards-container">
-      <div class="card card-1">
-        <h3>Авторська методика навчання</h3>
-        <p>Робота візуалізатора в основному складається з практики...</p>
+  <section class="formats-section">
+    <h2 class="section-title">ФОРМАТИ УЧАСТІ</h2>
+    <div class="content-box">
+      <div class="formats-cards">
+        <div class="format-card base">
+          <h3>БАЗА</h3>
+          <ul>
+            <li>Модуль 1 Підготовка</li>
+            <li>Модуль 2 Знайомство</li>
+            <li>Модуль 3 Створення стін</li>
+            <li>Модуль 4 Освітлення</li>
+            <li>Модуль 5 Матеріали</li>
+            <li>Модуль 6 Наповнення інтер’єру</li>
+            <li>Модуль 7 Текстурування</li>
+            <li>Модуль 8 Підготовка до рендеру</li>
+            <li>Модуль 9 Постобробка рендерингу</li>
+            <li>5 програм для роботи візуалізатором</li>
+          </ul>
+        </div>
+        <div class="format-card standard">
+          <h3>СТАНДАРТ</h3>
+          <p>Все, що входить до пакету "База"</p>
+          <ul>
+            <li>Гарантоване працевлаштування на ринку України</li>
+            <li>Підтримка кураторів на протязі 2 міс.</li>
+            <li>Доступ до бази матеріалів вартістю 25 000$</li>
+            <li>Доступ до закритого Telegram каналу</li>
+            <li>Практика на трьох реальних проєктах</li>
+            <li>Портфоліо із 6 робіт</li>
+            <li>Перевірка ДЗ кураторами</li>
+            <li>Екзамени після модулів</li>
+          </ul>
+        </div>
+        <div class="format-card premium">
+          <h3>ПРЕМІУМ</h3>
+          <div class="popular-tag">✨ Найпопулярніший</div>
+          <p>Все, що входить до пакетів "База" та "Стандарт"</p>
+          <ul>
+            <li>Працевлаштування на західному ринку та ринку України</li>
+            <li>Підтримка кураторів на протязі 3 міс.</li>
+            <li>Доступ до бази матеріалів вартістю 50 000$</li>
+            <li>Доступ до закритого Telegram каналу + чат випускників</li>
+            <li>Канал вакансій</li>
+            <li>Портфоліо із 12 робіт</li>
+            <li>Модуль 13 Світлова анімація</li>
+            <li>Модуль 14 Панорама 360</li>
+            <li>Модуль 15 Пошук роботи на західному ринку</li>
+            <li>Асистент 3D візуалізатора</li>
+            <li>МАРАФОН "РЕЗУЛЬТАТ"</li>
+            <li>Щотижневі дзвінки</li>
+            <li>Уроки 300 $ за 5 днів</li>
+          </ul>
+        </div>
       </div>
-      <div class="card card-2">
-        <h3>Стажування та практика на реальних проектах</h3>
-        <p>45% учнів починають заробляти ще під час навчання...</p>
+      <div class="formats-icons">
+        <div class="icon-card">
+          <p>Навчання у вільний час</p><span class="icon">📖</span>
+        </div>
+        <div class="icon-card">
+          <p>Доступ до матеріалів на рік</p><span class="icon">📁</span>
+        </div>
+        <div class="icon-card">
+          <p>Навчання з куратором</p><span class="icon">👨‍🏫</span>
+        </div>
+        <div class="icon-card">
+          <p>Гарантія працевлаштування</p><span class="icon">✔️</span>
+        </div>
+        <div class="icon-card">
+          <p>Ліцензований учбовий центр Autodesk</p><span class="icon">🏆</span>
+        </div>
       </div>
-      <div class="card card-3">
-        <h3>Гарантоване працевлаштування</h3>
-        <p>Ми гарантуємо, що ви заробите X2 від вартості курсу...</p>
-      </div>
-      <div class="card card-4">
-        <h3>Співпраця зі студією</h3>
-        <p>Навіть після навчання ми продовжуємо співпрацю...</p>
-      </div>
+      <button class="start-button">РОЗПОЧАТИ НАВЧАННЯ</button>
     </div>
+
   </section>
-  <section class="section"></section>
-  <section class="section"></section>
-  <script>
-    const cards = document.querySelectorAll(".card");
-    const section = document.querySelector(".scroll-section");
-
-    document.addEventListener("scroll", () => {
-      const sectionPosition = section.getBoundingClientRect().top;
-      const viewportHeight = window.innerHeight;
-
-      if (sectionPosition < viewportHeight / 2 && sectionPosition > -viewportHeight / 2) {
-        const progress = (viewportHeight / 2 - sectionPosition) / (section.offsetHeight / 2);
-
-        cards.forEach((card, index) => {
-          const offset = Math.min(Math.max(progress - index * 0.25, 0), 1); // Расчет положения
-          card.style.transform = `translateY(${500 - offset * 500}%)`;
-        });
-      }
-    });
-  </script>
 </body>
 
 </html>
