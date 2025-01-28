@@ -195,7 +195,7 @@
     }
   }
 
-  #why-us {
+  .why-us {
 
     .left-block {
       h4 {
@@ -532,7 +532,7 @@
     }
   }
 
-  #guarantees {
+  .guarantees {
     h3 {
       max-width: 100%;
     }
@@ -583,7 +583,7 @@
     }
   }
 
-  #why-us {
+  .why-us {
     .left-block {
       .flex-container {
         max-width: 100%;
@@ -591,11 +591,11 @@
     }
   }
 
-  #tab-section {
+  .tab-section {
     padding: 2rem 1rem;
   }
 
-  #privilege {
+  .privilege {
     .content-box {
       flex-direction: column-reverse;
     }
@@ -624,7 +624,7 @@
     }
   }
 
-  #reviews {
+  .reviews {
     .content-box {
       width: 100%;
     }
@@ -873,7 +873,7 @@
     }
   }
 
-  #about-us {
+  .about-us {
     .content-box {
       margin-top: 25px;
       gap: 15px;
@@ -961,7 +961,7 @@
     }
   }
 
-  #guarantees {
+  .guarantees {
     .title {
       margin-bottom: 1.2rem;
 
@@ -1006,7 +1006,7 @@
     }
   }
 
-  #why-us {
+  .why-us {
     h2 {
       text-align: left;
     }
@@ -1090,7 +1090,7 @@
     }
   }
 
-  #tab-section {
+  .tab-section {
     height: auto;
 
     h2 {
@@ -1102,7 +1102,7 @@
     }
   }
 
-  #privilege {
+  .privilege {
     h2 {
       margin-inline: -5px;
       text-align: center;
@@ -1129,7 +1129,7 @@
     }
   }
 
-  #for-whom {
+  .for-whom {
     .content-box {
       gap: 12px;
     }
@@ -1192,7 +1192,7 @@
     font-size: 16px;
   }
 
-  #reviews {
+  .reviews {
     .title-with-rating {
       flex-direction: column;
       align-items: start;

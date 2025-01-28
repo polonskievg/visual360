@@ -67,13 +67,12 @@
   flex-direction: column;
 
   h3 {
-    text-align: left;
-    text-transform: uppercase;
-    margin-bottom: 8px;
+    margin-bottom: 22px;
   }
 
   p {
     font-size: 1rem;
+    line-height: 1.2;
   }
 }
 
@@ -90,6 +89,8 @@
   }
 
   .tab-buttons {
+    width: 100%;
+    max-width: 900px;
     background-color: #909090;
     border-radius: 100px;
     flex-direction: row;
@@ -113,6 +114,7 @@
 
   .tabs {
     flex-direction: column;
+    align-items: center;
   }
 
   .tab-panel {
